@@ -1,0 +1,3 @@
+The Trustworthy AI Requirements (TAIR) ontology  provides the elements to describe requirements and concepts associated to a specific ISO standard. Additionally, provides the resources to related requirements or concepts from different standards but with similar purposes, e.g., domain-specific ISO MSS. 
+
+The tair:Requirement and tair:Concept are the main classes in the ontology. The tair:Concept class is a subclass of the ontolex  vocabulary, which describes linguistic resources such as the representation of dictionaries or annotations commonly found in lexicography. This class is the parent of any other resource in the TAIR ontology, which means a tair:Agent class or an ISO standard concept will be described by the tair:Concept class.

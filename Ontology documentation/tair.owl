@@ -1,0 +1,310 @@
+#
+# This work is licensed under a Creative Commons 
+# Attribution-NonCommercial 4.0 International License. 
+#
+# [http://creativecommons.org/licenses/by-nc/4.0/]
+#
+# Template Vocabulary document for the Trustworthy AI Requirements ontology
+#
+
+@prefix : <http://www.semanticweb.org/noe/ontologies/2022/10/tair-ontology#> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tair: <http://tair.adaptcentre.ie/ontologies/tair/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@base <http://tair.adaptcentre.ie/ontologies/tair> .
+
+<http://tair.adaptcentre.ie/ontologies/tair> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://tair.adaptcentre.ie/ontologies/tair/ExhibitedBy
+tair:ExhibitedBy rdf:type owl:ObjectProperty ;
+                 rdfs:domain tair:ExhibitedCharacteristic ;
+                 rdfs:range tair:Agent .
+
+
+###  http://tair.adaptcentre.ie/ontologies/tair/affectedBy
+tair:affectedBy rdf:type owl:ObjectProperty ;
+                rdfs:domain tair:Requirement ;
+                rdfs:range tair:Concept .
+
+
+###  http://tair.adaptcentre.ie/ontologies/tair/constrainedBy
+tair:constrainedBy rdf:type owl:ObjectProperty ;
+                   rdfs:domain tair:Requirement ;
+                   rdfs:range rdf:Resource .
+
+
+###  http://tair.adaptcentre.ie/ontologies/tair/decomposes
+tair:decomposes rdf:type owl:ObjectProperty ;
+                rdfs:domain tair:Requirement ;
+                rdfs:range tair:Requirement .
+
+
+###  http://tair.adaptcentre.ie/ontologies/tair/elaboratedBy
+tair:elaboratedBy rdf:type owl:ObjectProperty ;
+                  rdfs:domain tair:Requirement ;
+                  rdfs:range rdf:Resource .
+
+
+###  http://tair.adaptcentre.ie/ontologies/tair/exhibitedBy
+tair:exhibitedBy rdf:type owl:ObjectProperty ;
+                 rdfs:domain tair:ExhibitedCharacteristic ;
+                 rdfs:range tair:Asset .
+
+
+###  http://tair.adaptcentre.ie/ontologies/tair/exhibitedTo
+tair:exhibitedTo rdf:type owl:ObjectProperty ;
+                 rdfs:domain tair:ExhibitedCharacteristic ;
+                 rdfs:range tair:Agent .
+
+
+###  http://tair.adaptcentre.ie/ontologies/tair/implementedBy
+tair:implementedBy rdf:type owl:ObjectProperty ;
+                   rdfs:domain tair:Requirement ;
+                   rdfs:range tair:Concept .
+
+
+###  http://tair.adaptcentre.ie/ontologies/tair/satisfiedBy
+tair:satisfiedBy rdf:type owl:ObjectProperty ;
+                 rdfs:domain tair:Requirement ;
+                 rdfs:range tair:Requirement .
+
+
+###  http://tair.adaptcentre.ie/ontologies/tair/specifiedBy
+tair:specifiedBy rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdfs:domain tair:Requirement ;
+                 rdfs:range rdf:Resource .
+
+
+###  http://tair.adaptcentre.ie/ontologies/tair/trackedBy
+tair:trackedBy rdf:type owl:ObjectProperty ;
+               rdfs:domain tair:Requirement ;
+               rdfs:range tair:Concept .
+
+
+###  http://tair.adaptcentre.ie/ontologies/tair/uses
+tair:uses rdf:type owl:ObjectProperty ;
+          rdfs:domain tair:Requirement ;
+          rdfs:range rdf:Resource .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:ObjectProperty ;
+           rdfs:domain ontolex:Form ;
+           rdfs:range rdf:Literal .
+
+
+###  http://www.w3.org/ns/lemon/ontolex#canonicalForm
+ontolex:canonicalForm rdf:type owl:ObjectProperty ;
+                      rdfs:domain ontolex:LexicalEntry ;
+                      rdfs:range ontolex:Form .
+
+
+###  http://www.w3.org/ns/lemon/ontolex#denotes
+ontolex:denotes rdf:type owl:ObjectProperty ;
+                rdfs:domain ontolex:LexicalEntry ;
+                rdfs:range tair:Concept .
+
+
+###  http://www.w3.org/ns/lemon/ontolex#lexicalForm
+ontolex:lexicalForm rdf:type owl:ObjectProperty ;
+                    rdfs:domain ontolex:LexicalEntry ;
+                    rdfs:range ontolex:Form .
+
+
+###  http://www.w3.org/ns/lemon/ontolex#otherForm
+ontolex:otherForm rdf:type owl:ObjectProperty ;
+                  rdfs:domain ontolex:LexicalEntry ;
+                  rdfs:range ontolex:Form .
+
+
+###  http://www.w3.org/ns/lemon/ontolex#writtenRep
+ontolex:writtenRep rdf:type owl:ObjectProperty ;
+                   rdfs:domain ontolex:Form ;
+                   rdfs:range rdf:LangString .
+
+
+###  http://www.w3.org/ns/oa#hasBody
+oa:hasBody rdf:type owl:ObjectProperty ;
+           rdfs:domain oa:Annotation ;
+           rdfs:range ontolex:LexicalEntry .
+
+
+###  http://www.w3.org/ns/oa#hasTarget
+oa:hasTarget rdf:type owl:ObjectProperty ;
+             rdfs:domain oa:Annotation ;
+             rdfs:range tair:Requirement .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://tair.adaptcentre.ie/ontologies/tair/Activity
+tair:Activity rdf:type owl:Class ;
+              rdfs:subClassOf tair:Concept .
+
+
+###  http://tair.adaptcentre.ie/ontologies/tair/Agent
+tair:Agent rdf:type owl:Class ;
+           rdfs:subClassOf tair:Concept .
+
+
+###  http://tair.adaptcentre.ie/ontologies/tair/AiApplicationDeveloper
+tair:AiApplicationDeveloper rdf:type owl:Class ;
+                            rdfs:subClassOf tair:ValueChainOrg .
+
+
+###  http://tair.adaptcentre.ie/ontologies/tair/AiModelDeveloper
+tair:AiModelDeveloper rdf:type owl:Class ;
+                      rdfs:subClassOf tair:ValueChainOrg .
+
+
+###  http://tair.adaptcentre.ie/ontologies/tair/AiSystem
+tair:AiSystem rdf:type owl:Class .
+
+
+###  http://tair.adaptcentre.ie/ontologies/tair/AiUser
+tair:AiUser rdf:type owl:Class ;
+            rdfs:subClassOf tair:ValueChainOrg .
+
+
+###  http://tair.adaptcentre.ie/ontologies/tair/Asset
+tair:Asset rdf:type owl:Class ;
+           rdfs:subClassOf tair:AiSystem ,
+                           tair:Dataset ,
+                           tair:Entity ,
+                           tair:Test .
+
+
+###  http://tair.adaptcentre.ie/ontologies/tair/Concept
+tair:Concept rdf:type owl:Class ;
+             rdfs:subClassOf ontolex:LexicalConcept .
+
+
+###  http://tair.adaptcentre.ie/ontologies/tair/ConjuntiveRequirement
+tair:ConjuntiveRequirement rdf:type owl:Class ;
+                           rdfs:subClassOf tair:Requirement ;
+                           owl:disjointWith tair:DisjuntiveRequirement .
+
+
+###  http://tair.adaptcentre.ie/ontologies/tair/DataPovider
+tair:DataPovider rdf:type owl:Class ;
+                 rdfs:subClassOf tair:ValueChainOrg .
+
+
+###  http://tair.adaptcentre.ie/ontologies/tair/DataProvider
+tair:DataProvider rdf:type owl:Class ;
+                  rdfs:subClassOf tair:ValueChainOrg .
+
+
+###  http://tair.adaptcentre.ie/ontologies/tair/Dataset
+tair:Dataset rdf:type owl:Class .
+
+
+###  http://tair.adaptcentre.ie/ontologies/tair/DisjuntiveRequirement
+tair:DisjuntiveRequirement rdf:type owl:Class ;
+                           rdfs:subClassOf tair:Requirement .
+
+
+###  http://tair.adaptcentre.ie/ontologies/tair/Entity
+tair:Entity rdf:type owl:Class ;
+            rdfs:subClassOf tair:Concept .
+
+
+###  http://tair.adaptcentre.ie/ontologies/tair/ExhibitedCharacteristic
+tair:ExhibitedCharacteristic rdf:type owl:Class ;
+                             rdfs:subClassOf tair:Concept .
+
+
+###  http://tair.adaptcentre.ie/ontologies/tair/Organization
+tair:Organization rdf:type owl:Class ;
+                  rdfs:subClassOf tair:Stakeholder .
+
+
+###  http://tair.adaptcentre.ie/ontologies/tair/Requirement
+tair:Requirement rdf:type owl:Class ;
+                 rdfs:subClassOf tair:RequirementCollection ,
+                                 skos:Concept .
+
+
+###  http://tair.adaptcentre.ie/ontologies/tair/RequirementCollection
+tair:RequirementCollection rdf:type owl:Class ;
+                           rdfs:subClassOf skos:Collection ;
+                           rdfs:comment "Collection of requirements."^^rdfs:Literal ;
+                           rdfs:label "Requirement collection"^^rdfs:Literal .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tair:RequirementCollection ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget skos:Collection ;
+   rdfs:label tair:RequirementCollection
+ ] .
+
+
+###  http://tair.adaptcentre.ie/ontologies/tair/RequirementSpecification
+tair:RequirementSpecification rdf:type owl:Class ;
+                              rdfs:subClassOf tair:Requirement .
+
+
+###  http://tair.adaptcentre.ie/ontologies/tair/Stakeholder
+tair:Stakeholder rdf:type owl:Class ;
+                 rdfs:subClassOf tair:Agent .
+
+
+###  http://tair.adaptcentre.ie/ontologies/tair/Test
+tair:Test rdf:type owl:Class .
+
+
+###  http://tair.adaptcentre.ie/ontologies/tair/ValueChainOrg
+tair:ValueChainOrg rdf:type owl:Class ;
+                   rdfs:subClassOf tair:Organization .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#LangString
+rdf:LangString rdf:type owl:Class .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal
+rdf:Literal rdf:type owl:Class .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource
+rdf:Resource rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#Collection
+skos:Collection rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+skos:Concept rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/lemon/ontolex#Form
+ontolex:Form rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/lemon/ontolex#LexicalConcept
+ontolex:LexicalConcept rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/lemon/ontolex#LexicalEntry
+ontolex:LexicalEntry rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/oa#Annotation
+oa:Annotation rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
