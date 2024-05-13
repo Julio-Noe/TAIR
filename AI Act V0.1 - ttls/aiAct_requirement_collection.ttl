@@ -1,0 +1,215 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tair: <http://openscience.adaptcentre.ie/ontologies/tair/> .
+
+tair:AccessToDataAndDocumentationReqColl a tair:RequirementCollection ;
+    tair:decomposes tair:EnforcementReqColl ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 64"@en ;
+    skos:prefLabel "Access to data and documentation"@en .
+
+tair:AccuracyRobustnessAndCybersecurityReqColl a tair:RequirementCollection ;
+    tair:decomposes tair:RequirementsforHighRiskAiSystemsReqColl ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 15"@en ;
+    skos:prefLabel "Accuracy, robustness and cybersecurity"@en .
+
+tair:AutomaticallyGeneratedLogsReqColl a tair:RequirementCollection ;
+    tair:decomposes tair:ObligationsOfProvidersAndUsersOfHighRiskAiSystemsAndOtherPartiesReqColl ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 20"@en ;
+    skos:prefLabel "Automatically generated logs"@en .
+
+tair:CeMarkingOfConformityReqColl a tair:RequirementCollection ;
+    tair:decomposes tair:StandardsConformityAssessmentCertificatesRegistrationReqColl ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 49"@en ;
+    skos:prefLabel "CE marking of conformity"@en .
+
+tair:ComformityAssessmentReqColl a tair:RequirementCollection ;
+    tair:decomposes tair:ObligationsOfProvidersAndUsersOfHighRiskAiSystemsAndOtherPartiesReqColl ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 19"@en ;
+    skos:prefLabel "Conformity assessment"@en .
+
+tair:CommonSpecificationsReqColl a tair:RequirementCollection ;
+    tair:decomposes tair:StandardsConformityAssessmentCertificatesRegistrationReqColl ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 41"@en ;
+    skos:prefLabel "Common Specifications"@en .
+
+tair:ComplianceWithTheRequirementsReqColl a tair:RequirementCollection ;
+    tair:decomposes tair:RequirementsforHighRiskAiSystemsReqColl ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 8"@en ;
+    skos:prefLabel "Compliance with the requirements"@en .
+
+tair:ConformityAssessmentReqColl a tair:RequirementCollection ;
+    tair:decomposes tair:StandardsConformityAssessmentCertificatesRegistrationReqColl ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 43"@en ;
+    skos:prefLabel "Conformity assessment"@en .
+
+tair:CooperationWithCompententAuthoritiesReqColl a tair:RequirementCollection ;
+    tair:decomposes tair:ObligationsOfProvidersAndUsersOfHighRiskAiSystemsAndOtherPartiesReqColl ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 23"@en ;
+    skos:prefLabel "Cooperation with competent authorities"@en .
+
+tair:CorrectiveActionsReqColl a tair:RequirementCollection ;
+    tair:decomposes tair:ObligationsOfProvidersAndUsersOfHighRiskAiSystemsAndOtherPartiesReqColl ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 21"@en ;
+    skos:prefLabel "Corrective actions"@en .
+
+tair:DataAndDataGovernanceReqColl a tair:RequirementCollection ;
+    tair:decomposes tair:RequirementsforHighRiskAiSystemsReqColl ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 10"@en ;
+    skos:prefLabel "Data and data governance"@en .
+
+tair:DutyOfInformationReqColl a tair:RequirementCollection ;
+    tair:decomposes tair:ObligationsOfProvidersAndUsersOfHighRiskAiSystemsAndOtherPartiesReqColl ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article22"@en ;
+    skos:prefLabel "Duty of information"@en .
+
+tair:HarmonisedStandardsReqColl a tair:RequirementCollection ;
+    tair:decomposes tair:StandardsConformityAssessmentCertificatesRegistrationReqColl ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 40"@en ;
+    skos:prefLabel "Harmonised standards"@en .
+
+tair:HumanOversightReqColl a tair:RequirementCollection ;
+    tair:decomposes tair:RequirementsforHighRiskAiSystemsReqColl ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 14"@en ;
+    skos:prefLabel "Human oversight"@en .
+
+tair:NotifiedBodiesReqColl a tair:RequirementCollection ;
+    tair:decomposes tair:NotifiyingAuthoritiesAndNotifiedBodiesReqColl ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 33"@en ;
+    skos:prefLabel "Notified bodies"@en .
+
+tair:ObligationToDrawUpTechnicalDocumentationReqColl a tair:RequirementCollection ;
+    tair:decomposes tair:ObligationsOfProvidersAndUsersOfHighRiskAiSystemsAndOtherPartiesReqColl ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 18"@en ;
+    skos:prefLabel "Obligation to draw up technical documentation"@en .
+
+tair:ObligationsOfProductManufacturersReqColl a tair:RequirementCollection ;
+    tair:decomposes tair:ObligationsOfProvidersAndUsersOfHighRiskAiSystemsAndOtherPartiesReqColl ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 24"@en ;
+    skos:prefLabel "Obligations of product manufacturers"@en .
+
+tair:ObligationsOfProvidersOfHihgRiskAiSystemsReqColl a tair:RequirementCollection ;
+    tair:decomposes tair:ObligationsOfProvidersAndUsersOfHighRiskAiSystemsAndOtherPartiesReqColl ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 16"@en ;
+    skos:prefLabel "Obligations of providers of high-risk Ai systems"@en .
+
+tair:PostMarketMonitoringByProvidersAndPostMarketMonitoringPlanForHighRiskAiSystemsReqColl a tair:RequirementCollection ;
+    tair:decomposes tair:PostMarketMonitoringReqColl ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 61"@en ;
+    skos:prefLabel "Post-market monitoring by providers and post-market monitoring plan for high-risk AI systems"@en .
+
+tair:ProcedureForDealingWithAISystemsPresentingAriskAtNationalLevelReqColl a tair:RequirementCollection ;
+    tair:decomposes tair:EnforcementReqColl ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 65"@en ;
+    skos:prefLabel "Procedure for dealing with AI systems presenting a risk at national level"@en .
+
+tair:QualityManagementSystemReqColl a tair:RequirementCollection ;
+    tair:decomposes tair:ObligationsOfProvidersAndUsersOfHighRiskAiSystemsAndOtherPartiesReqColl ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 17"@en ;
+    skos:prefLabel "Quality management system"@en .
+
+tair:RecordKeepingReqColl a tair:RequirementCollection ;
+    tair:decomposes tair:RequirementsforHighRiskAiSystemsReqColl ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 12"@en ;
+    skos:prefLabel "Record-keeping"@en .
+
+tair:RegistrationReqColl a tair:RequirementCollection ;
+    tair:decomposes tair:StandardsConformityAssessmentCertificatesRegistrationReqColl ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 51"@en ;
+    skos:prefLabel "Registration"@en .
+
+tair:ReportingOfSeriousIncidentsAndMalfunctioningReqColl a tair:RequirementCollection ;
+    tair:decomposes tair:SharingOfInformationOnIncidentsAndMalfunctioningReqColl ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 62"@en ;
+    skos:prefLabel "Reporting of serious incidents and of malfunctioning"@en .
+
+tair:RequirementsForHighRiskAiSystemsReqColl a tair:RequirementCollection ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Chapter 2"@en ;
+    skos:prefLabel "Requirements for high-risk AI systems"@en .
+
+tair:RiskManagementSystemReqColl a tair:RequirementCollection ;
+    tair:decomposes tair:RequirementsforHighRiskAiSystemsReqColl ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 9"@en ;
+    skos:prefLabel "Risk management system"@en .
+
+tair:TechnicalDocumentationReqColl a tair:RequirementCollection ;
+    tair:decomposes tair:RequirementsforHighRiskAiSystemsReqColl ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 11"@en ;
+    skos:prefLabel "Technical documentation"@en .
+
+tair:TransparencyAndProvisionOfInformationToUsersReqColl a tair:RequirementCollection ;
+    tair:decomposes tair:RequirementsforHighRiskAiSystemsReqColl ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 13"@en ;
+    skos:prefLabel "Transparency and provision of information to users"@en .
+
+tair:NotifiyingAuthoritiesAndNotifiedBodiesReqColl a tair:RequirementCollection ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Chapter 4"@en ;
+    skos:prefLabel "Notifiying authorities and notified bodies"@en .
+
+tair:PostMarketMonitoringReqColl a tair:RequirementCollection ;
+    tair:decomposes tair:PostMarketMonitoringInformationSharingMarketSurveillance ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Chapter 1"@en ;
+    skos:prefLabel "Post-market monitoring"@en .
+
+tair:SharingOfInformationOnIncidentsAndMalfunctioningReqColl a tair:RequirementCollection ;
+    tair:decomposes tair:PostMarketMonitoringInformationSharingMarketSurveillance ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Chapter 2"@en ;
+    skos:prefLabel "Sharing of information on incidents and malfunctioning"@en .
+
+tair:EnforcementReqColl a tair:RequirementCollection ;
+    tair:decomposes tair:PostMarketMonitoringInformationSharingMarketSurveillance ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Chapter 3"@en ;
+    skos:prefLabel "Enforcement"@en .
+
+tair:PostMarketMonitoringInformationSharingMarketSurveillance a tair:RequirementCollection ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Title VIII"@en ;
+    skos:prefLabel "Post-Market monitoring, information sharing, market surveillance"@en .
+
+tair:StandardsConformityAssessmentCertificatesRegistrationReqColl a tair:RequirementCollection ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Chapter 5"@en ;
+    skos:prefLabel "Standards, conformity assessment, certificates, registration"@en .
+
+tair:ObligationsOfProvidersAndUsersOfHighRiskAiSystemsAndOtherPartiesReqColl a tair:RequirementCollection ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Chapter 3"@en ;
+    skos:prefLabel "Obligations for providers and users of high-risk AI systems and other parties"@en .
+
+tair:RequirementCollection a tair:RequirementCollection ;
+    rdfs:label "AI Act requirement collection"@en ;
+    prov:wasDerivedFrom <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> .
+

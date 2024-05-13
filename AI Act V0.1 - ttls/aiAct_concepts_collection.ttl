@@ -1,0 +1,132 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tair: <http://openscience.adaptcentre.ie/ontologies/tair/> .
+
+tair:AiSystemTechniquesAndApproaches a tair:ConceptCollection ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52021PC0206&from=EN> ;
+    skos:member tair:LogicAndKowledgeBasedApproaches,
+        tair:MachineLearningApproaches,
+        tair:StatisticalApproaches .
+
+tair:AiaDefinitions a tair:ConceptCollection ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52021PC0206&from=EN> ;
+    skos:member tair:AiSystem,
+        tair:AuthorisedRepresentative,
+        tair:BiometricCategorisationSystem,
+        tair:BiometricData,
+        tair:CeMarking,
+        tair:CommonSpecification,
+        tair:ConformityAssessment,
+        tair:ConformityAssessmentBody,
+        tair:Distributor,
+        tair:EmotionRecognitionSystem,
+        tair:HarmonisedStandard,
+        tair:Importer,
+        tair:InputData,
+        tair:InstructionsForUse,
+        tair:IntendedPurpose,
+        tair:LawEnforcement,
+        tair:LawEnforcementAuthorityOther,
+        tair:LawEnforcementAuthorityPublic,
+        tair:MakingAvailableOnTheMarket,
+        tair:MarketSurveillanceAuthority,
+        tair:NationalCompetentAuthority,
+        tair:NationalSupervisoryAuthority,
+        tair:NotifiedBody,
+        tair:NotifyingAuthority,
+        tair:Operator,
+        tair:Performance,
+        tair:PlacingOnTheMarket,
+        tair:PostMarketMonitoring,
+        tair:PostRemoteBiometricIdentificationSystem,
+        tair:Provider,
+        tair:PubliclyAccessibleSpace,
+        tair:PuttingIntoService,
+        tair:RealTimeRemoteBiometricIdentificationSystem,
+        tair:ReasonablyForseeableMisuse,
+        tair:Recall,
+        tair:RemoteBiometricIdentificationSystem,
+        tair:SafetyComponent,
+        tair:SeriousIncidentInfrastructure,
+        tair:SeriousIncidentPersonPropertyEnvironment,
+        tair:SmallScaleProvider,
+        tair:SubstantialChange,
+        tair:TestingData,
+        tair:TrainingData,
+        tair:User,
+        tair:ValidationData,
+        tair:Withdrawal .
+
+tair:Concept a skos:Concept ;
+    rdfs:subClassOf tair:ConceptCollection .
+
+tair:HighRiskAiAreas a tair:ConceptCollection ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52021PC0206&from=EN> ;
+    skos:member tair:AccessToEssentialServicesAndBenefitsHighRiskArea,
+        tair:AdministrationOfJusticeAndDemocraticHighRiskArea,
+        tair:BiometricIdHighRiskArea,
+        tair:CriticalInfrastructureHighRiskArea,
+        tair:EducationAndTrainingHighRiskArea,
+        tair:EmploymentRelatedHighRiskArea,
+        tair:LawEnforcementHighRiskArea,
+        tair:MigrationAsylumAndBorderControlHighRiskArea .
+
+tair:HighRiskAreaAiSystems a tair:ConceptCollection ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52021PC0206&from=EN> ;
+    skos:member tair:AccessToEducationAndTrainingAiSystem,
+        tair:AssessmentInEducationAndTrainingAiSystem,
+        tair:CrimePredictionAiSystem,
+        tair:CriminalDataAnalysisAiSystem,
+        tair:CriticalInfrastructureHighRiskArea,
+        tair:DecisionOnCreditAssessmentAiSystem,
+        tair:DecisionOnEmergencyServicesAiSystem,
+        tair:DecisionOnPublicBenefitsAndServicesAiSystem,
+        tair:DecisionsInmploymentAiSystem,
+        tair:DeepFakeDetectionForLawEnforcementAiSystem,
+        tair:EmotionDetectionForLawEnforcementAiSystem,
+        tair:EvidenceReliabilityAssessmentAiSystem,
+        tair:ImmigrationApplicationProcessingAiSystem,
+        tair:ImmigrationDocumentCheckAiSystem,
+        tair:JudicialAuthorityAssistanceAiSystem,
+        tair:LieAndEmotionDetectionForImmigrationAiSystem,
+        tair:OffencesRiskAssessmentAiSystem,
+        tair:ProfilingForLawEnforcementAiSystem,
+        tair:RecruitmentForEmploymentAiSystem,
+        tair:RemoteBiometricIdAiSystem,
+        tair:SafetyOfCriticalInfrastructureAiSystem .
+
+tair:ListOfUnionHarmonisationLegislation a tair:ConceptCollection ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52021PC0206&from=EN> ;
+    skos:member tair:ListofOtherUnionHarmonisationLegislation,
+        tair:ListofUnionHarmonisationLegislationBasedOnTheNewLegislativeFramework .
+
+tair:ListofOtherUnionHarmonisationLegislation a tair:ConceptCollection ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52021PC0206&from=EN> ;
+    skos:member tair:AgriculturalAndForestryVehiclesHarmonisedLegislation,
+        tair:CivilAviationHarmonisedLegislation,
+        tair:CivilAviationSafetyHarmonisedLegislation,
+        tair:MarineEquipmentHarmonisedLegislation,
+        tair:MotorVehiclesAndTheirTrailersAndComponentsHarmonisedLegislation,
+        tair:RailSystemsHarmonisedLegislation,
+        tair:TwoOrThreeWheelVehiclesAndQuadricyclesHarmonisedLegislation .
+
+tair:ListofUnionHarmonisationLegislationBasedOnTheNewLegislativeFramework a tair:ConceptCollection ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52021PC0206&from=EN> ;
+    skos:member tair:BurningGaseousFuelsHarmonisedLegislation,
+        tair:CablewayInstallationHarmonisedLegislation,
+        tair:ExplosiveGassesHarmonisedLegislation,
+        tair:InVitroDiagnosticMedicalDevicesHarmonisedLegislation,
+        tair:LiftsHarmonisedLegislation,
+        tair:MachineryHarmonisedLegislation,
+        tair:MedicalDevicesHarmonisedLegislation,
+        tair:PersonalProtectiveEquipmentHarmonisedLegislation,
+        tair:PressureEquipmentHarmonisedLegislation,
+        tair:RadioEquipmentHarmonisedLegislation,
+        tair:RecreationalPersonalWatercraftHarmonisedLegislation,
+        tair:ToysHarmonisedLegislation .
+
+tair:ConceptCollection a skos:Collection ;
+    prov:wasDerivedFrom <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52021PC0206&from=EN> .
+

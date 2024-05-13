@@ -1,0 +1,720 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tair: <http://openscience.adaptcentre.ie/ontologies/tair/> .
+
+tair:le_acceptable_risk a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "acceptable risk"@en .
+
+tair:le_accountability_framework a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "accountability framework"@en .
+
+tair:le_agent a tair:LexicalEntry ;
+    dct:source <https://isotc.iso.org/livelink/livelink/fetch/-8921878/8921901/16347356/16347818/2021%2D05_Annex_SL_Appendix_2.pdf?nodeid=21826538&vernum=-2> ;
+    skos:definition "MSS lexical entry"@en ;
+    skos:prefLabel "agent"@en .
+
+tair:le_ai_customer a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "ai customer"@en .
+
+tair:le_ai_data_provider a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "ai data provider"@en .
+
+tair:le_ai_data_subject a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "ai data subject"@en .
+
+tair:le_ai_developer a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "ai developer"@en .
+
+tair:le_ai_opportunities a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "ai opportunities"@en .
+
+tair:le_ai_other_subject a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "ai other subject"@en .
+
+tair:le_ai_partner a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "ai partner"@en .
+
+tair:le_ai_platform_provider a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "ai platform provider"@en .
+
+tair:le_ai_producer a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "ai producer"@en .
+
+tair:le_ai_product_provider a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "ai product provider"@en .
+
+tair:le_ai_provider a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "ai provider"@en .
+
+tair:le_ai_risk a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "ai risk"@en .
+
+tair:le_ai_risk_assessment a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "ai risk assessment"@en .
+
+tair:le_ai_risk_assessment_process a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "ai risk assessment process"@en .
+
+tair:le_ai_risk_criteria a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "ai risk criteria"@en .
+
+tair:le_ai_risk_impact a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "ai risk impact"@en .
+
+tair:le_ai_risk_treatment a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "ai risk treatment"@en .
+
+tair:le_ai_risk_treatment_option a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "ai risk treatment option"@en .
+
+tair:le_ai_risk_treatment_plan a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "ai risk treatment plan"@en .
+
+tair:le_ai_risk_treatment_process a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "ai risk treatment process"@en .
+
+tair:le_ai_service_provider a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "ai service provider"@en .
+
+tair:le_ai_subject a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "ai subject"@en .
+
+tair:le_ai_system_impact_assessment a tair:LexicalEntry ;
+    dct:source <https://isotc.iso.org/livelink/livelink/fetch/-8921878/8921901/16347356/16347818/2021%2D05_Annex_SL_Appendix_2.pdf?nodeid=21826538&vernum=-2> ;
+    skos:definition "MSS lexical entry"@en ;
+    skos:prefLabel "ai system impact assessment"@en .
+
+tair:le_ai_system_integrator a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "ai system integrator"@en .
+
+tair:le_ai_user a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "ai user"@en .
+
+tair:le_annex_a a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "annex a"@en .
+
+tair:le_annex_b a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "annex b"@en .
+
+tair:le_annex_c a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "annex c"@en .
+
+tair:le_applicable_legal_obligations a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "applicablegal obligations"@en .
+
+tair:le_application_context a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "application context"@en .
+
+tair:le_backup_plan a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "backup plan"@en .
+
+tair:le_business_requirements a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "business requirements"@en .
+
+tair:le_children a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "children"@en .
+
+tair:le_commission a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "commission"@en .
+
+tair:le_competence_evaluation a tair:LexicalEntry ;
+    dct:source <https://isotc.iso.org/livelink/livelink/fetch/-8921878/8921901/16347356/16347818/2021%2D05_Annex_SL_Appendix_2.pdf?nodeid=21826538&vernum=-2> ;
+    skos:definition "MSS lexical entry"@en ;
+    skos:prefLabel "competence evaluation"@en .
+
+tair:le_continuous_iterative_process a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "continuous iterative process"@en .
+
+tair:le_contractual_obligation a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "contractual obligation"@en .
+
+tair:le_controls a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "controls"@en .
+
+tair:le_credit_institution a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "credit institution"@en .
+
+<http://openscience.adaptcentre.ie/ontologies/tair/le_credit_institutions_regulated_by_Directive_2013/36/EU> a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "credit institutions regulated by Directive 2013/36/EU"@en .
+
+<http://openscience.adaptcentre.ie/ontologies/tair/le_credit_institutions_regulated_by_Directive_2013/36/_eu> a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "credit institutions regulated by Directive 2013/36/ eu"@en .
+
+tair:le_culture a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "culture"@en .
+
+tair:le_cybersecurity_of_high_risk_AI_systems a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "cybersecurity of high risk AI systems"@en .
+
+tair:le_data_governance_practices a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "data governance practices"@en .
+
+tair:le_data_management_practices a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "data management practices"@en .
+
+tair:le_decisions_by_regulator a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "decisions by regulator"@en .
+
+tair:le_design_control_of_the_high_risk_AI_system a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "design control of the high risk AI system"@en .
+
+tair:le_design_of_the_high_risk_AI_system a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "design of the high risk AI system"@en .
+
+<http://openscience.adaptcentre.ie/ontologies/tair/le_design_verification_of_the_high_risk_AI_system.> a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "design verification of the high risk AI system."@en .
+
+tair:le_development_process a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "development process"@en .
+
+tair:le_distributors_of_the_high_risk_AI_system a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "distributors of the high risk AI system"@en .
+
+tair:le_eliminating_or_reducing_risks a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "eliminating or reducing risks"@en .
+
+tair:le_ethic a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "ethic"@en .
+
+tair:le_evaluation a tair:LexicalEntry ;
+    dct:source <https://isotc.iso.org/livelink/livelink/fetch/-8921878/8921901/16347356/16347818/2021%2D05_Annex_SL_Appendix_2.pdf?nodeid=21826538&vernum=-2> ;
+    skos:definition "MSS lexical entry"@en ;
+    skos:prefLabel "evaluation"@en .
+
+tair:le_evaluation_security_performance a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en> ;
+    skos:definition "ISMSS lexical entry"@en ;
+    skos:prefLabel "evaluation security performance"@en .
+
+tair:le_examination_procedure_of_the_high_risk_AI_system a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "examination procedure of the high risk AI system"@en .
+
+tair:le_expert_groups a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "expert groups"@en .
+
+tair:le_external_communication a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en> ;
+    skos:definition "ISMSS lexical entry"@en ;
+    skos:prefLabel "external communication"@en .
+
+tair:le_external_context a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "external context"@en .
+
+tair:le_external_issue a tair:LexicalEntry ;
+    dct:source <https://isotc.iso.org/livelink/livelink/fetch/-8921878/8921901/16347356/16347818/2021%2D05_Annex_SL_Appendix_2.pdf?nodeid=21826538&vernum=-2>,
+        <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en,
+        "MSS lexical entry"@en ;
+    skos:prefLabel "external issue"@en .
+
+tair:le_external_processes a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en> ;
+    skos:definition "ISMSS lexical entry"@en ;
+    skos:prefLabel "external processes"@en .
+
+tair:le_external_products a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en> ;
+    skos:definition "ISMSS lexical entry"@en ;
+    skos:prefLabel "external products"@en .
+
+tair:le_external_services a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en> ;
+    skos:definition "ISMSS lexical entry"@en ;
+    skos:prefLabel "external services"@en .
+
+tair:le_fail_safe_plan a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "fail safe plan"@en .
+
+tair:le_governance a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "governance"@en .
+
+tair:le_guidelines a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "guidelines"@en .
+
+tair:le_harmonised_standards a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "harmonised standards"@en .
+
+tair:le_high_risk_AI_system a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "high risk AI system"@en .
+
+tair:le_human_oversight a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "human oversight"@en .
+
+tair:le_individuals a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "individuals"@en .
+
+tair:le_interal_issue a tair:LexicalEntry ;
+    dct:source <https://isotc.iso.org/livelink/livelink/fetch/-8921878/8921901/16347356/16347818/2021%2D05_Annex_SL_Appendix_2.pdf?nodeid=21826538&vernum=-2> ;
+    skos:definition "MSS lexical entry"@en ;
+    skos:prefLabel "internal issue"@en .
+
+tair:le_internal_communication a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en> ;
+    skos:definition "ISMSS lexical entry"@en ;
+    skos:prefLabel "internal communication"@en .
+
+tair:le_internal_context a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "internal context"@en .
+
+tair:le_internal_issue a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "internal issue"@en .
+
+tair:le_iso_iec_22989 a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "iso iec 22989"@en .
+
+tair:le_iso_iec_29100 a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "iso iec 29100"@en .
+
+tair:le_levels_of_accuracy_metrics a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "levels of accuracy metrics"@en .
+
+tair:le_levels_of_relevant_accuracy_metrics a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "levels of relevant accuracy metrics"@en .
+
+tair:le_logs a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "logs"@en .
+
+tair:le_mitigation_measures a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "mitigation measures"@en .
+
+tair:le_national_public_authorities_or_bodies a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "national public authorities or bodies"@en .
+
+tair:le_non-acceptable_risk a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "non-acceptabrisk"@en .
+
+tair:le_norms a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "norms"@en .
+
+tair:le_notified_bodies a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "notified bodies"@en .
+
+tair:le_organization_role a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "organization role"@en .
+
+tair:le_organization_size a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "organization size"@en .
+
+tair:le_organizational_context a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "organizational context"@en .
+
+tair:le_perform_consistently_for_their_intended_purpose a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "perform consistently for their intended purpose"@en .
+
+tair:le_placing_on_the_market a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "placing on the market"@en .
+
+tair:le_policymaker a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "policymaker"@en .
+
+tair:le_post_market_monitoring_plan a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "post market monitoring plan"@en .
+
+tair:le_post_market_monitoring_system a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "post market monitoring system"@en .
+
+tair:le_preliminarily_defined_metrics a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "preliminarily defined metrics"@en .
+
+tair:le_preliminarily_defined_probablistic_thresholds a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "preliminarily defined probablistic thresholds"@en .
+
+tair:le_procedures a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "procedures"@en .
+
+tair:le_product_manufacturer a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "product manufacturer"@en .
+
+tair:le_prohibited_uses_of_ai a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "prohibited uses of ai"@en .
+
+tair:le_putting_into_service a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "putting into service"@en .
+
+tair:le_quality_assurance_high-risk_AI_system a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "quality assurance high-risk AI system"@en .
+
+tair:le_quality_control_high-risk_AI_system a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "quality control high-risk AI system"@en .
+
+tair:le_quality_management_system a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "quality management system"@en .
+
+tair:le_regulator a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "regulator"@en .
+
+tair:le_relevant_bodies a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "relevant bodies"@en .
+
+tair:le_relevant_public_authority_or_body a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "relevant public authority or body"@en .
+
+tair:le_residual_risk a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "residual risk"@en .
+
+tair:le_resource_management a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "resource management"@en .
+
+tair:le_results_validation a tair:LexicalEntry ;
+    dct:source <https://isotc.iso.org/livelink/livelink/fetch/-8921878/8921901/16347356/16347818/2021%2D05_Annex_SL_Appendix_2.pdf?nodeid=21826538&vernum=-2> ;
+    skos:definition "MSS lexical entry"@en ;
+    skos:prefLabel "results validation"@en .
+
+tair:le_risk_assessment a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "risk assessment"@en .
+
+tair:le_risk_assessment_evaluation a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en> ;
+    skos:definition "ISMSS lexical entry"@en ;
+    skos:prefLabel "risk assessment evaluation"@en .
+
+tair:le_risk_evaluation a tair:LexicalEntry ;
+    dct:source <https://isotc.iso.org/livelink/livelink/fetch/-8921878/8921901/16347356/16347818/2021%2D05_Annex_SL_Appendix_2.pdf?nodeid=21826538&vernum=-2> ;
+    skos:definition "MSS lexical entry"@en ;
+    skos:prefLabel "risk evaluation"@en .
+
+tair:le_risk_management_evaluation a tair:LexicalEntry ;
+    dct:source <https://isotc.iso.org/livelink/livelink/fetch/-8921878/8921901/16347356/16347818/2021%2D05_Annex_SL_Appendix_2.pdf?nodeid=21826538&vernum=-2> ;
+    skos:definition "MSS lexical entry"@en ;
+    skos:prefLabel "risk management evaluation"@en .
+
+tair:le_risk_management_measures a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "risk management measures"@en .
+
+tair:le_risk_management_procedure a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "risk management procedure"@en .
+
+tair:le_risk_management_system a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "risk management system"@en .
+
+tair:le_risk_treatment a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "risk treatment"@en .
+
+tair:le_society a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "society"@en .
+
+tair:le_specific_geographical_behavioural_or_functional_setting a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "specific geographical behavioural or functional setting"@en .
+
+tair:le_system_vulnerabilities a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "system vulnerabilities"@en .
+
+tair:le_systems_and_procedures_for_data_management a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "systems and procedures for data management"@en .
+
+tair:le_systems_and_procedures_for_record a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "systems and procedures for record"@en .
+
+tair:le_technical_documentation a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "technical documentation"@en .
+
+tair:le_technical_solutions a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "technical solutions"@en .
+
+tair:le_technical_solutions_aimed_at_ensuring_the_cybersecurity_of_high_risk_AI_systems a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "technical solutions aimed at ensuring the cybersecurity of high risk AI systems"@en .
+
+tair:le_technical_solutions_to_address_AI_specific_vulnerabilities a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "technical solutions to address AI specific vulnerabilities"@en .
+
+tair:le_techniques_involving_the_training_of_models_with_data a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "techniques involving the training of models with data"@en .
+
+tair:le_test_procedure_of_the_high_risk_AI_system a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "test procedure of the high risk AI system"@en .
+
+tair:le_testing_data_set a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "testing data set"@en .
+
+tair:le_testing_of_high_risk_AI_systems a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "testing of high risk AI systems"@en .
+
+tair:le_testing_procedures a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "testing procedures"@en .
+
+tair:le_the_commission a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "the commission"@en .
+
+tair:le_traditions a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "traditions"@en .
+
+tair:le_training_data_set a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "training data set"@en .
+
+tair:le_training_validation_and_testing_data_sets a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "training validation and testing data sets"@en .
+
+tair:le_universal_human_rights a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "universal human rights"@en .
+
+tair:le_validation_data_set a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "validation data set"@en .
+
+tair:le_validation_procedure_of_the_high_risk_AI_system a tair:LexicalEntry ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:definition "AI Act lexical entry"@en ;
+    skos:prefLabel "validation procedure of the high risk AI system"@en .
+
+tair:le_validation_results a tair:LexicalEntry ;
+    dct:source <https://isotc.iso.org/livelink/livelink/fetch/-8921878/8921901/16347356/16347818/2021%2D05_Annex_SL_Appendix_2.pdf?nodeid=21826538&vernum=-2> ;
+    skos:definition "MSS lexical entry"@en ;
+    skos:prefLabel "validation resource"@en .
+
+tair:le_values a tair:LexicalEntry ;
+    dct:source <https://www.iso.org/standard/81230.html> ;
+    skos:definition "AIMSS lexical entry"@en ;
+    skos:prefLabel "values"@en .
+
+tair:ConceptCollection a skos:Collection ;
+    prov:wasDerivedFrom <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52021PC0206&from=EN> .
+
+tair:LexicalEntry a ontolex:LexicalEntry ;
+    rdfs:subClassOf tair:ConceptCollection .
+

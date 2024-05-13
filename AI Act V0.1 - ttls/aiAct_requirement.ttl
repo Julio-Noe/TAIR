@@ -1,0 +1,1531 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tair: <http://openscience.adaptcentre.ie/ontologies/tair/> .
+
+tair:Requirement a tair:Requirement,
+        rdfs:Class ;
+    rdfs:label "AI Act Requirement"@en,
+        "AI Act requirement"@en ;
+    rdfs:subClassOf tair:AIActRequirementCollection,
+        tair:Requirement .
+
+tair:AiaPrReq_10.1 a tair:Requirement ;
+    tair:decomposes tair:DataAndDataGovernanceReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    tair:uses tair:le_techniques_involving_the_training_of_models_with_data ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 10(1)"@en ;
+    skos:definition "High-risk AI systems which make use of techniques involving the training of models with data shall be developed on the basis of training, validation and testing data sets that meet the quality criteria referred to in paragraphs 2 to 5."@en ;
+    skos:related tair:MssConjReq_9.1_R1a,
+        tair:MssConjReq_9.1_R1b .
+
+tair:AiaPrReq_10.3_1 a tair:Requirement ;
+    tair:decomposes tair:DataAndDataGovernanceReqColl ;
+    tair:implementedBy tair:le_training_validation_and_testing_data_sets ;
+    tair:uses tair:le_testing_data_set,
+        tair:le_training_data_set,
+        tair:le_validation_data_set ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 10(3)"@en ;
+    skos:definition "Training, validation and testing data sets shall be relevant, representative, free of errors and complete. "@en ;
+    skos:related tair:MssConjReq_9.1_R1a .
+
+tair:AiaPrReq_10.3_2 a tair:Requirement ;
+    tair:decomposes tair:DataAndDataGovernanceReqColl ;
+    tair:implementedBy tair:le_training_validation_and_testing_data_sets ;
+    tair:uses tair:le_testing_data_set,
+        tair:le_training_data_set,
+        tair:le_validation_data_set ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 10(3)"@en ;
+    skos:definition "[Training, validation and testing data sets] shall have the appropriate statistical properties, including, where applicable, as regards the persons or groups of persons on which the high-risk AI system is intended to be used. "@en ;
+    skos:related tair:MssConjReq_9.1_R1a .
+
+tair:AiaPrReq_10.3_3 a tair:Requirement ;
+    tair:decomposes tair:DataAndDataGovernanceReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    tair:uses tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 10(3)"@en ;
+    skos:definition "These characteristics [appropriate statistical properties, including, where applicable, as regards the persons or groups of persons on which the high-risk AI system is intended to be used] of the data sets may be met at the level of individual data sets or a combination thereof."@en ;
+    skos:related tair:MssConjReq_9.1_R1b .
+
+tair:AiaPrReq_10.4 a tair:Requirement ;
+    tair:decomposes tair:DataAndDataGovernanceReqColl ;
+    tair:implementedBy tair:le_training_validation_and_testing_data_sets ;
+    tair:uses tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 10(4)"@en ;
+    skos:definition "Training, validation and testing data sets shall take into account, to the extent required by the intended purpose, the characteristics or elements that are particular to the specific geographical, behavioural or functional setting within which the high-risk AI system is intended to be used."@en ;
+    skos:related tair:MssConjReq_9.1_R1b .
+
+tair:AiaPrReq_10.5 a tair:Requirement ;
+    tair:constrainedBy tair:le_article_10_1_regulation_eu_2018_1725,
+        tair:le_article_10_directive_eu_2016_680,
+        tair:le_article_9_1_regulation_eu_2016_679 ;
+    tair:decomposes tair:DataAndDataGovernanceReqColl ;
+    tair:implementedBy tair:Provider ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 10(5)"@en ;
+    skos:broader tair:MssReq_4.1 ;
+    skos:definition "To the extent that it is strictly necessary for the purposes of ensuring bias monitoring, detection and correction in relation to the high-risk AI systems, the providers of such systems may process special categories of personal data referred to in Article 9(1) of Regulation (EU) 2016/679, Article 10 of Directive (EU) 2016/680 and Article 10(1) of Regulation (EU) 2018/1725, subject to appropriate safeguards for the fundamental rights and freedoms of natural persons, including technical limitations on the re-use and use of state-of-the-art security and privacy-preserving measures, such as pseudonymisation, or encryption where anonymisation may significantly affect the purpose pursued.                                "@en .
+
+tair:AiaPrReq_10.6 a tair:Requirement ;
+    tair:constrainedBy tair:AiaPrReq_10.2_1,
+        tair:AiaPrReq_10.2_2,
+        tair:AiaPrReq_10.2_3,
+        tair:AiaPrReq_10.2_4,
+        tair:AiaPrReq_10.2_5,
+        tair:AiaPrReq_10.2_6,
+        tair:AiaPrReq_10.2_7,
+        tair:AiaPrReq_10.2_8 ;
+    tair:decomposes tair:DataAndDataGovernanceReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    tair:uses tair:le_data_governance_practices,
+        tair:le_data_management_practices ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 10(6)"@en ;
+    skos:definition "Appropriate data governance and management practices shall apply for the development of high-risk AI systems other than those which make use of techniques involving the training of models in order to ensure that those high-risk AI systems comply with paragraph 2."@en ;
+    skos:related tair:MssConjReq_9.1_R1a .
+
+tair:AiaPrReq_11.1_1 a tair:Requirement ;
+    tair:decomposes tair:TechnicalDocumentationReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    tair:uses tair:le_technical_documentation ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 11(1)"@en ;
+    skos:definition "The technical documentation of a high-risk AI system shall be drawn up before that system is placed on the market or put into service and shall be kept up-to date."@en ;
+    skos:related tair:MssConjReq_7.5.1_R1b .
+
+tair:AiaPrReq_11.1_2 a tair:Requirement ;
+    tair:decomposes tair:TechnicalDocumentationReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    tair:uses tair:le_technical_documentation ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 11(1)"@en ;
+    skos:definition "The technical documentation shall be drawn up in such a way to demonstrate that the high-risk AI system complies with the requirements set out in this Chapter and provide national competent authorities and notified bodies with all the necessary information to assess the compliance of the AI system with those requirements"@en ;
+    skos:related tair:MssConjReq_7.5.1_R1b .
+
+tair:AiaPrReq_11.1_3 a tair:Requirement ;
+    tair:constrainedBy tair:AiaPrReq_10.2_8 ;
+    tair:decomposes tair:TechnicalDocumentationReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    tair:uses tair:le_technical_documentation ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 11(1)"@en ;
+    skos:definition "It [technical documentation] shall contain, at a minimum, the elements set out in Annex IV."@en ;
+    skos:related tair:MssConjReq_7.5.1_R1b .
+
+tair:AiaPrReq_11.2 a tair:Requirement ;
+    tair:constrainedBy tair:le_annex_IV,
+        tair:le_annex_ii_a ;
+    tair:decomposes tair:TechnicalDocumentationReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    tair:uses tair:le_technical_documentation ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 11(2)"@en ;
+    skos:definition "Where a high-risk AI system related to a product, to which the legal acts listed in Annex II, section A apply, is placed on the market or put into service one single technical documentation shall be drawn up containing all the information set out in Annex IV as well as the information required under those legal acts."@en ;
+    skos:related tair:MssConjReq_7.5.1_R1b .
+
+tair:AiaPrReq_11.3 a tair:Requirement ;
+    tair:constrainedBy tair:le_annex_IV ;
+    tair:decomposes tair:TechnicalDocumentationReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    tair:uses tair:le_technical_documentation ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 11(3)"@en ;
+    skos:definition "The Commission is empowered to adopt delegated acts in accordance with Article 73 to amend Annex IV where necessary to ensure that, in the light of technical progress, the technical documentation provides all the necessary information to assess the compliance of the system with the requirements set out in this Chapter"@en ;
+    skos:related tair:MssConjReq_7.5.1_R1b .
+
+tair:AiaPrReq_12.1 a tair:Requirement ;
+    tair:decomposes tair:RecordKeepingReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    tair:uses tair:le_logs ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 12(1)"@en ;
+    skos:definition "High-risk AI systems shall be designed and developed with capabilities enabling the automatic recording of events (‘logs’) while the high-risk AI systems is operating. Those logging capabilities shall conform to recognised standards or common specifications."@en ;
+    skos:related tair:MssConjReq_9.1_R1a .
+
+tair:AiaPrReq_12.2 a tair:Requirement ;
+    tair:decomposes tair:RecordKeepingReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    tair:uses tair:le_logs ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 12(2)"@en ;
+    skos:definition "The logging capabilities shall ensure a level of traceability of the AI system’s functioning throughout its lifecycle that is appropriate to the intended purpose of the system."@en ;
+    skos:related tair:MssConjReq_9.1_R1b .
+
+tair:AiaPrReq_12.3 a tair:Requirement ;
+    tair:constrainedBy tair:PostMarketMonitoringByProvidersAndPostMarketMonitoringPlanForHighRiskAiSystemsReqColl,
+        tair:le_article_65_1 ;
+    tair:decomposes tair:RecordKeepingReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    tair:uses tair:le_logs ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 12(3)"@en ;
+    skos:definition "In particular, logging capabilities shall enable the monitoring of the operation of the high-risk AI system with respect to the occurrence of situations that may result in the AI system presenting a risk within the meaning of Article 65(1) or lead to a substantial modification, and facilitate the post-market monitoring referred to in Article 61."@en ;
+    skos:related tair:MssConjReq_9.1_R1b .
+
+tair:AiaPrReq_12.4_1 a tair:Requirement ;
+    tair:constrainedBy tair:PostMarketMonitoringByProvidersAndPostMarketMonitoringPlanForHighRiskAiSystemsReqColl ;
+    tair:decomposes tair:RecordKeepingReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    tair:uses tair:le_logs ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 12(4)(a)"@en ;
+    skos:definition "[For high-risk AI systems referred to in paragraph 1, point (a) of Annex III, the logging capabilities shall provide, at a minimum] recording of the period of each use of the system (start date and time and end date and time of each use)"@en ;
+    skos:related tair:MssConjReq_9.1_R1b .
+
+tair:AiaPrReq_12.4_2 a tair:Requirement ;
+    tair:constrainedBy tair:PostMarketMonitoringByProvidersAndPostMarketMonitoringPlanForHighRiskAiSystemsReqColl ;
+    tair:decomposes tair:RecordKeepingReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    tair:uses tair:le_logs ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 12(4)(b)"@en ;
+    skos:definition "[For high-risk AI systems referred to in paragraph 1, point (a) of Annex III, the logging capabilities shall provide, at a minimum] the reference database against which input data has been checked by the system;"@en ;
+    skos:related tair:MssConjReq_9.1_R1b .
+
+tair:AiaPrReq_12.4_3 a tair:Requirement ;
+    tair:constrainedBy tair:PostMarketMonitoringByProvidersAndPostMarketMonitoringPlanForHighRiskAiSystemsReqColl ;
+    tair:decomposes tair:RecordKeepingReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    tair:uses tair:le_logs ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 12(4)(c)"@en ;
+    skos:definition "[For high-risk AI systems referred to in paragraph 1, point (a) of Annex III, the logging capabilities shall provide, at a minimum] the input data for which the search has led to a match"@en ;
+    skos:related tair:MssConjReq_9.1_R1b .
+
+tair:AiaPrReq_12.4_4 a tair:Requirement ;
+    tair:constrainedBy tair:PostMarketMonitoringByProvidersAndPostMarketMonitoringPlanForHighRiskAiSystemsReqColl ;
+    tair:decomposes tair:RecordKeepingReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    tair:uses tair:le_logs ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 12(4)(d)"@en ;
+    skos:definition "[For high-risk AI systems referred to in paragraph 1, point (a) of Annex III, the logging capabilities shall provide, at a minimum] the identification of the natural persons involved in the verification of the results, as referred to in Article 14 (5)"@en ;
+    skos:related tair:MssConjReq_9.1_R1b .
+
+tair:AiaPrReq_13.1 a tair:Requirement ;
+    tair:constrainedBy tair:PostMarketMonitoringByProvidersAndPostMarketMonitoringPlanForHighRiskAiSystemsReqColl ;
+    tair:decomposes tair:TransparencyAndProvisionOfInformationToUsersReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 13(1)"@en ;
+    skos:definition "High-risk AI systems shall be designed and developed in such a way to ensure that their operation is sufficiently transparent to enable users to interpret the system’s output and use it appropriately. An appropriate type and degree of transparency shall be ensured, with a view to achieving compliance with the relevant obligations of the user and of the provider set out in Chapter 3 of this Title."@en ;
+    skos:related tair:MssConjReq_8.1_R1a .
+
+tair:AiaPrReq_13.3_1 a tair:Requirement ;
+    tair:decomposes tair:TransparencyAndProvisionOfInformationToUsersReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 13(3)(a)"@en ;
+    skos:definition "[The information referred to in paragraph 2 shall specify] the identity and the contact details of the provider and, where applicable, of its authorised representative."@en .
+
+tair:AiaPrReq_13.3_2_1 a tair:Requirement ;
+    tair:decomposes tair:TransparencyAndProvisionOfInformationToUsersReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 13(3)(b)(i)"@en ;
+    skos:definition "[The information referred to in paragraph 2 shall specify] [the characteristics, capabilities and limitations of performance of the high-risk AI system, including] its intended purpose"@en .
+
+tair:AiaPrReq_13.3_2_2 a tair:Requirement ;
+    tair:affectedBy tair:AccuracyRobustnessAndCybersecurityReqColl,
+        tair:AiaPrReq_13.2 ;
+    tair:decomposes tair:TransparencyAndProvisionOfInformationToUsersReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 13(3)(b)(ii)"@en ;
+    skos:definition "[The information referred to in paragraph 2 shall specify] [the characteristics, capabilities and limitations of performance of the high-risk AI system, including] the level of accuracy, robustness and cybersecurity referred to in Article 15 against which the high-risk AI system has been tested and validated and which can be expected, and any known and foreseeable circumstances that may have an impact on that expected level of accuracy, robustness and cybersecurity."@en .
+
+tair:AiaPrReq_13.3_2_3 a tair:Requirement ;
+    tair:decomposes tair:TransparencyAndProvisionOfInformationToUsersReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 13(3)(b)(iii)"@en ;
+    skos:definition "[The information referred to in paragraph 2 shall specify] [the characteristics, capabilities and limitations of performance of the high-risk AI system, including] any known or foreseeable circumstance, related to the use of the high-risk AI system in accordance with its intended purpose or under conditions of reasonably foreseeable misuse, which may lead to risks to the health and safety or fundamental rights."@en .
+
+tair:AiaPrReq_13.3_2_4 a tair:Requirement ;
+    tair:decomposes tair:TransparencyAndProvisionOfInformationToUsersReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 13(3)(b)(iv)"@en ;
+    skos:definition "[The information referred to in paragraph 2 shall specify] [the characteristics, capabilities and limitations of performance of the high-risk AI system, including] its performance as regards the persons or groups of persons on which the system is intended to be used."@en .
+
+tair:AiaPrReq_13.3_2_5 a tair:Requirement ;
+    tair:decomposes tair:TransparencyAndProvisionOfInformationToUsersReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 13(3)(b)(v)"@en ;
+    skos:definition "[The information referred to in paragraph 2 shall specify] [the characteristics, capabilities and limitations of performance of the high-risk AI system, including] when appropriate, specifications for the input data, or any other relevant information in terms of the training, validation and testing data sets used, taking into account the intended purpose of the AI system."@en .
+
+tair:AiaPrReq_13.3_3 a tair:Requirement ;
+    tair:decomposes tair:TransparencyAndProvisionOfInformationToUsersReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    tair:uses tair:Performance ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 13(3)(c)"@en ;
+    skos:definition "[The information referred to in paragraph 2 shall specify] the changes to the high-risk AI system and its performance which have been pre-determined by the provider at the moment of the initial conformity assessment, if any"@en .
+
+tair:AiaPrReq_13.3_4 a tair:Requirement ;
+    tair:affectedBy tair:AiaPrReq_13.2,
+        tair:HumanOversightReqColl ;
+    tair:decomposes tair:TransparencyAndProvisionOfInformationToUsersReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 13(3)(d)"@en ;
+    skos:definition "[The information referred to in paragraph 2 shall specify] the human oversight measures referred to in Article 14, including the technical measures put in place to facilitate the interpretation of the outputs of AI systems by the users"@en .
+
+tair:AiaPrReq_13.3_5 a tair:Requirement ;
+    tair:decomposes tair:TransparencyAndProvisionOfInformationToUsersReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 13(3)(e)"@en ;
+    skos:definition "[The information referred to in paragraph 2 shall specify] the expected lifetime of the high-risk AI system and any necessary maintenance and care measures to ensure the proper functioning of that AI system, including as regards software updates"@en .
+
+tair:AiaPrReq_14.1 a tair:Requirement ;
+    tair:decomposes tair:HumanOversightReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 14(1)"@en ;
+    skos:broader tair:AimssConjReq_6.1.1_R1,
+        tair:MssConjReq_6.1_R1b,
+        tair:MssConjReq_6.1_R1c ;
+    skos:definition "High-risk AI systems shall be designed and developed in such a way, including with appropriate human-machine interface tools, that they can be effectively overseen by natural persons during the period in which the AI system is in use."@en .
+
+tair:AiaPrReq_14.2 a tair:Requirement ;
+    tair:decomposes tair:HumanOversightReqColl ;
+    tair:implementedBy tair:le_human_oversight ;
+    tair:uses tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 14(2)"@en ;
+    skos:definition "Human oversight shall aim at preventing or minimising the risks to health, safety or fundamental rights that may emerge when a high-risk AI system is used in accordance with its intended purpose or under conditions of reasonably foreseeable misuse, in particular when such risks persist notwithstanding the application of other requirements set out in this Chapter."@en ;
+    skos:related tair:AimssConjReq_6.1.4_R1a,
+        tair:AimssConjReq_6.1.4_R1b,
+        tair:MssConjReq_5.3_R1 .
+
+tair:AiaPrReq_14.4_1 a tair:Requirement ;
+    tair:affectedBy tair:AiaPrReq_14.3_1,
+        tair:AiaPrReq_14.3_2 ;
+    tair:decomposes tair:HumanOversightReqColl ;
+    tair:implementedBy tair:le_human_oversight ;
+    tair:uses tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 14(4)(a)"@en ;
+    skos:definition "[The measures referred to in paragraph 3 shall enable the individuals to whom human oversight is assigned to do the following, as appropriate to the circumstances] fully understand the capacities and limitations of the high-risk AI system and be able to duly monitor its operation, so that signs of anomalies, dysfunctions and unexpected performance can be detected and addressed as soon as possible"@en ;
+    skos:related tair:MssConjReq_5.3_R1,
+        tair:MssConjReq_7.2_R1a .
+
+tair:AiaPrReq_14.4_2 a tair:Requirement ;
+    tair:affectedBy tair:AiaPrReq_14.3_1,
+        tair:AiaPrReq_14.3_2 ;
+    tair:decomposes tair:HumanOversightReqColl ;
+    tair:implementedBy tair:le_human_oversight ;
+    tair:uses tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 14(4)(b)"@en ;
+    skos:definition "[The measures referred to in paragraph 3 shall enable the individuals to whom human oversight is assigned to do the following, as appropriate to the circumstances] remain aware of the possible tendency of automatically relying or over-relying on the output produced by a high-risk AI system (‘automation bias’), in particular for high-risk AI systems used to provide information or recommendations for decisions to be taken by natural persons"@en ;
+    skos:related tair:MssConjReq_5.3_R1,
+        tair:MssConjReq_7.2_R1a .
+
+tair:AiaPrReq_14.4_3 a tair:Requirement ;
+    tair:affectedBy tair:AiaPrReq_14.3_1,
+        tair:AiaPrReq_14.3_2 ;
+    tair:decomposes tair:HumanOversightReqColl ;
+    tair:implementedBy tair:le_human_oversight ;
+    tair:uses tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 14(4)(c)"@en ;
+    skos:definition "[The measures referred to in paragraph 3 shall enable the individuals to whom human oversight is assigned to do the following, as appropriate to the circumstances] be able to correctly interpret the high-risk AI system’s output, taking into account in particular the characteristics of the system and the interpretation tools and methods available."@en ;
+    skos:related tair:MssConjReq_5.3_R1,
+        tair:MssConjReq_7.2_R1a .
+
+tair:AiaPrReq_14.4_4 a tair:Requirement ;
+    tair:affectedBy tair:AiaPrReq_14.3_1,
+        tair:AiaPrReq_14.3_2 ;
+    tair:decomposes tair:HumanOversightReqColl ;
+    tair:implementedBy tair:le_human_oversight ;
+    tair:uses tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 14(4)(d)"@en ;
+    skos:definition "[The measures referred to in paragraph 3 shall enable the individuals to whom human oversight is assigned to do the following, as appropriate to the circumstances] be able to decide, in any particular situation, not to use the high-risk AI system or otherwise disregard, override or reverse the output of the high-risk AI system"@en ;
+    skos:related tair:MssConjReq_5.3_R1,
+        tair:MssConjReq_7.2_R1a .
+
+tair:AiaPrReq_14.4_5 a tair:Requirement ;
+    tair:affectedBy tair:AiaPrReq_14.3_1,
+        tair:AiaPrReq_14.3_2 ;
+    tair:decomposes tair:HumanOversightReqColl ;
+    tair:implementedBy tair:le_human_oversight ;
+    tair:uses tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 14(4)(e)"@en ;
+    skos:definition "[The measures referred to in paragraph 3 shall enable the individuals to whom human oversight is assigned to do the following, as appropriate to the circumstances] be able to intervene on the operation of the high-risk AI system or interrupt the system through a “stop” button or a similar procedure"@en ;
+    skos:related tair:MssConjReq_5.3_R1,
+        tair:MssConjReq_7.2_R1a .
+
+tair:AiaPrReq_14.5 a tair:Requirement ;
+    tair:constrainedBy tair:AiaPrReq_14.3_2 ;
+    tair:decomposes tair:HumanOversightReqColl ;
+    tair:implementedBy tair:le_human_oversight ;
+    tair:uses tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 14(5)"@en ;
+    skos:definition "For high-risk AI systems referred to in point 1(a) of Annex III, the measures referred to in paragraph 3 shall be such as to ensure that, in addition, no action or decision is taken by the user on the basis of the identification resulting from the system unless this has been verified and confirmed by at least two natural persons"@en ;
+    skos:related tair:MssConjReq_5.3_R1,
+        tair:MssConjReq_9.1_R1c,
+        tair:MssConjReq_9.1_R1d .
+
+tair:AiaPrReq_15.1 a tair:Requirement ;
+    tair:decomposes tair:AccuracyRobustnessAndCybersecurityReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 15(1)"@en ;
+    skos:broader tair:MssConjReq_8.1_R1a,
+        tair:MssConjReq_8.1_R1b ;
+    skos:definition "High-risk AI systems shall be designed and developed in such a way that they achieve, in the light of their intended purpose, an appropriate level of accuracy, robustness and cybersecurity, and perform consistently in those respects throughout their lifecycle."@en .
+
+tair:AiaPrReq_15.2 a tair:Requirement ;
+    tair:decomposes tair:AccuracyRobustnessAndCybersecurityReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    tair:uses tair:,
+        tair:le_levels_of_accuracy_metrics,
+        tair:le_levels_of_relevant_accuracy_metrics ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 15(2)"@en ;
+    skos:broader tair:MssConjReq_9.1_R1a,
+        tair:MssConjReq_9.1_R2 ;
+    skos:definition "The levels of accuracy and the relevant accuracy metrics of high-risk AI systems shall be declared in the accompanying instructions of use."@en .
+
+tair:AiaPrReq_15.3_1 a tair:Requirement ;
+    tair:decomposes tair:AccuracyRobustnessAndCybersecurityReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    tair:uses tair:le_backup_plan,
+        tair:le_fail_safe_plan ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 15(3)"@en ;
+    skos:broader tair:AimssConjReq_6.1.4_R1a,
+        tair:AimssConjReq_6.1.4_R1b,
+        tair:AimssConjReq_6.1.4_R1c ;
+    skos:definition "High-risk AI systems shall be resilient as regards errors, faults or inconsistencies that may occur within the system or the environment in which the system operates, in particular due to their interaction with natural persons or other systems. The robustness of high-risk AI systems may be achieved through technical redundancy solutions, which may include backup or fail-safe plans."@en .
+
+tair:AiaPrReq_15.3_2 a tair:Requirement ;
+    tair:decomposes tair:AccuracyRobustnessAndCybersecurityReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    tair:uses tair:le_mitigation_measures ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 15(3)"@en ;
+    skos:broader tair:MssConjReq_8.1_R3,
+        tair:MssConjReq_9.1_R1a,
+        tair:MssConjReq_9.1_R1c ;
+    skos:definition "High-risk AI systems that continue to learn after being placed on the market or put into service shall be developed in such a way to ensure that possibly biased outputs due to outputs used as an input for future operations (‘feedback loops’) are duly addressed with appropriate mitigation measures."@en .
+
+tair:AiaPrReq_15.4_1 a tair:Requirement ;
+    tair:decomposes tair:AccuracyRobustnessAndCybersecurityReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 15(4)"@en ;
+    skos:broader tair:AimssConjReq_6.1.2_R1c,
+        tair:AimssConjReq_6.1.2_R1d1,
+        tair:AimssConjReq_6.1.2_R1d2,
+        tair:AimssConjReq_6.1.2_R1d3 ;
+    skos:definition "High-risk AI systems shall be resilient as regards attempts by unauthorised third parties to alter their use or performance by exploiting the system vulnerabilities."@en .
+
+tair:AiaPrReq_15.4_2 a tair:Requirement ;
+    tair:decomposes tair:AccuracyRobustnessAndCybersecurityReqColl ;
+    tair:implementedBy tair:le_technical_solutions_aimed_at_ensuring_the_cybersecurity_of_high_risk_AI_systems ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 15(4)"@en ;
+    skos:broader tair:AimssActionsToAddressRisksAndOpportunitiesAiRiskTreatmentReqColl ;
+    skos:definition "The technical solutions aimed at ensuring the cybersecurity of high-risk AI systems shall be appropriate to the relevant circumstances and the risks."@en .
+
+tair:AiaPrReq_15.4_3 a tair:Requirement ;
+    tair:decomposes tair:AccuracyRobustnessAndCybersecurityReqColl ;
+    tair:implementedBy tair:le_technical_solutions_to_address_AI_specific_vulnerabilities ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 15(4)"@en ;
+    skos:broader tair:AimssActionsToAddressRisksAndOpportunitiesAiRiskTreatmentReqColl ;
+    skos:definition "The technical solutions to address AI specific vulnerabilities shall include, where appropriate, measures to prevent and control for attacks trying to manipulate the training dataset (‘data poisoning’), inputs designed to cause the model to make a mistake (‘adversarial examples’), or model flaws."@en .
+
+tair:AiaPrReq_16.1_1 a tair:Requirement ;
+    tair:decomposes tair:ObligationsOfProvidersOfHighRiskAiSystemsReqColl ;
+    tair:implementedBy tair:Provider ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 16(1)(a)"@en ;
+    skos:broader tair:MssReq_4.1 ;
+    skos:definition "[Providers of high-risk AI systems shall] ensure that their high-risk AI systems are compliant with the requirements set out in Chapter 2 of this Title."@en .
+
+tair:AiaPrReq_16.1_10 a tair:Requirement ;
+    tair:decomposes tair:ObligationsOfProvidersOfHighRiskAiSystemsReqColl ;
+    tair:implementedBy tair:Provider ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 16(1)(j)"@en ;
+    skos:broader tair:MssConjReq_7.5.1_R1b ;
+    skos:definition "[Providers of high-risk AI systems shall] upon request of a national competent authority, demonstrate the conformity of the high-risk AI system with the requirements set out in Chapter 2 of this Title."@en .
+
+tair:AiaPrReq_16.1_2 a tair:Requirement ;
+    tair:affectedBy tair:QualityManagementSystemReqColl,
+        tair:RequirementsForHighRiskAiSystemsReqColl ;
+    tair:decomposes tair:ObligationsOfProvidersOfHighRiskAiSystemsReqColl ;
+    tair:implementedBy tair:Provider ;
+    tair:uses tair:le_quality_management_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 16(1)(b)"@en ;
+    skos:broader tair:AimssConjReq_4.1_R1.1,
+        tair:MssReq_4.1 ;
+    skos:definition "[Providers of high-risk AI systems shall] have a quality management system in place which complies with Article 17"@en .
+
+tair:AiaPrReq_16.1_3 a tair:Requirement ;
+    tair:decomposes tair:ObligationsOfProvidersOfHighRiskAiSystemsReqColl ;
+    tair:implementedBy tair:Provider ;
+    tair:uses tair:le_technical_documentation ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 16(1)(c)"@en ;
+    skos:broader tair:MssConjReq_7.5.1_R1b ;
+    skos:definition "[Providers of high-risk AI systems shall] draw-up the technical documentation of the high-risk AI system"@en .
+
+tair:AiaPrReq_16.1_4 a tair:Requirement ;
+    tair:decomposes tair:ObligationsOfProvidersOfHighRiskAiSystemsReqColl ;
+    tair:implementedBy tair:Provider ;
+    tair:uses tair:le_high_risk_AI_system,
+        tair:le_logs ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 16(1)(d)"@en ;
+    skos:broader tair:MssConjReq_9.1_R1a ;
+    skos:definition "[Providers of high-risk AI systems shall] when under their control, keep the logs automatically generated by their high-risk AI systems."@en .
+
+tair:AiaPrReq_16.1_5 a tair:Requirement ;
+    tair:decomposes tair:ObligationsOfProvidersOfHighRiskAiSystemsReqColl ;
+    tair:implementedBy tair:Provider ;
+    tair:uses tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 16(1)(e)"@en ;
+    skos:broader tair:AimssConjReq_6.1.4_R1a ;
+    skos:definition "[Providers of high-risk AI systems shall] ensure that the high-risk AI system undergoes the relevant conformity assessment procedure, prior to its placing on the market or putting into service"@en .
+
+tair:AiaPrReq_16.1_6 a tair:Requirement ;
+    tair:decomposes tair:ObligationsOfProvidersOfHighRiskAiSystemsReqColl ;
+    tair:implementedBy tair:Provider ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 16(1)(f)"@en ;
+    skos:broader tair:MssReq_4.1 ;
+    skos:definition "[Providers of high-risk AI systems shall] comply with the registration obligations referred to in Article 51"@en .
+
+tair:AiaPrReq_16.1_7 a tair:Requirement ;
+    tair:decomposes tair:ObligationsOfProvidersOfHighRiskAiSystemsReqColl ;
+    tair:implementedBy tair:Provider ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 16(1)(g)"@en ;
+    skos:broader tair:MssReq_10.2_R1c ;
+    skos:definition "[Providers of high-risk AI systems shall] take the necessary corrective actions, if the high-risk AI system is not in conformity with the requirements set out in Chapter 2 of this Title"@en .
+
+tair:AiaPrReq_16.1_8 a tair:Requirement ;
+    tair:decomposes tair:ObligationsOfProvidersOfHighRiskAiSystemsReqColl ;
+    tair:implementedBy tair:Provider ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 16(1)(h)"@en ;
+    skos:broader tair:MssReq_10.2_R3a,
+        tair:MssReq_10.2_R3b ;
+    skos:definition "[Providers of high-risk AI systems shall] inform the national competent authorities of the Member States in which they made the AI system available or put it into service and, where applicable, the notified body of the non-compliance and of any corrective actions taken"@en .
+
+tair:AiaPrReq_16.1_9 a tair:Requirement ;
+    tair:decomposes tair:ObligationsOfProvidersOfHighRiskAiSystemsReqColl ;
+    tair:implementedBy tair:Provider ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 16(1)(i)"@en ;
+    skos:broader tair:MssReq_4.1 ;
+    skos:definition "[Providers of high-risk AI systems shall] to affix the CE marking to their high-risk AI systems to indicate the conformity with this Regulation in accordance with Article 49."@en .
+
+tair:AiaPrReq_17.1_c_13 a tair:Requirement ;
+    tair:constrainedBy tair:AiaPrReq_17.1_a,
+        tair:AiaPrReq_17.1_b,
+        tair:AiaPrReq_17.1_c_1,
+        tair:AiaPrReq_17.1_c_10,
+        tair:AiaPrReq_17.1_c_11,
+        tair:AiaPrReq_17.1_c_12,
+        tair:AiaPrReq_17.1_c_2,
+        tair:AiaPrReq_17.1_c_3,
+        tair:AiaPrReq_17.1_c_4,
+        tair:AiaPrReq_17.1_c_5,
+        tair:AiaPrReq_17.1_c_6,
+        tair:AiaPrReq_17.1_c_7,
+        tair:AiaPrReq_17.1_c_8,
+        tair:AiaPrReq_17.1_c_9 ;
+    tair:decomposes tair:QualityManagementSystemReqColl ;
+    tair:implementedBy tair:le_quality_management_system ;
+    tair:uses tair:le_accountability_framework ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 17(1)(m)"@en ;
+    skos:broader tair:AimssConjReq_4.1_R1.1 ;
+    skos:definition "That [quality management system] [shall include at least the following aspects] an accountability framework setting out the responsibilities of the management and other staff with regard to all aspects listed in this paragraph."@en .
+
+tair:AiaPrReq_17.2 a tair:Requirement ;
+    tair:decomposes tair:QualityManagementSystemReqColl ;
+    tair:implementedBy tair:Provider ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 17(2)"@en ;
+    skos:broader tair:MssReq_7.1 ;
+    skos:definition "The implementation of aspects referred to in paragraph 1 shall be proportionate to the size of the provider’s organisation"@en .
+
+tair:AiaPrReq_17.3 a tair:Requirement ;
+    tair:affectedBy tair:HarmonisedStandardsReqColl,
+        <http://openscience.adaptcentre.ie/ontologies/tair/le_credit_institutions_regulated_by_Directive_2013/36/_eu> ;
+    tair:decomposes tair:QualityManagementSystemReqColl ;
+    tair:implementedBy tair:Provider ;
+    tair:uses tair:le_quality_management_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 17(3)"@en ;
+    skos:broader tair:MssReq_4.1 ;
+    skos:definition "For providers that are credit institutions regulated by Directive 2013/36/ EU, the obligation to put a quality management system in place shall be deemed to be fulfilled by complying with the rules on internal governance arrangements, processes and mechanisms pursuant to Article 74 of that Directive. In that context, any harmonised standards referred to in Article 40 of this Regulation shall be taken into account."@en .
+
+tair:AiaPrReq_18.1 a tair:Requirement ;
+    tair:constrainedBy tair:HarmonisedStandardsReqColl ;
+    tair:decomposes tair:ObligationToDrawUpTechnicalDocumentationReqColl ;
+    tair:implementedBy tair:Provider ;
+    tair:uses tair:le_technical_documentation ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 18(1)"@en ;
+    skos:broader tair:MssConjReq_7.5.1_R1b ;
+    skos:definition "Providers of high-risk AI systems shall draw up the technical documentation referred to in Article 11 in accordance with Annex IV."@en .
+
+tair:AiaPrReq_18.2 a tair:Requirement ;
+    tair:decomposes tair:ObligationToDrawUpTechnicalDocumentationReqColl ;
+    tair:implementedBy tair:Provider ;
+    tair:uses tair:le_technical_documentation ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 18(2)"@en ;
+    skos:broader tair:MssConjReq_7.5.3_R3,
+        tair:MssReq_4.1 ;
+    skos:definition "Providers that are credit institutions regulated by Directive 2013/36/EU shall maintain the technical documentation as part of the documentation concerning internal governance, arrangements, processes and mechanisms pursuant to Article 74 of that Directive"@en .
+
+tair:AiaPrReq_19.1_1 a tair:Requirement ;
+    tair:decomposes tair:ComformityAssessmentReqColl ;
+    tair:implementedBy tair:Provider ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 19(1)"@en ;
+    skos:broader tair:AimssConjReq_6.1.4_R1a ;
+    skos:definition "Providers of high-risk AI systems shall ensure that their systems undergo the relevant conformity assessment procedure in accordance with Article 43, prior to their placing on the market or putting into service."@en .
+
+tair:AiaPrReq_19.1_2 a tair:Requirement ;
+    tair:affectedBy tair:CEMarkingOfConformityReqColl,
+        tair:EUDeclarationOfConformityReqColl ;
+    tair:constrainedBy tair:le_high_risk_AI_system ;
+    tair:decomposes tair:ComformityAssessmentReqColl ;
+    tair:implementedBy tair:Provider ;
+    tair:uses tair:ConformityAssessment,
+        tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 19(1)"@en ;
+    skos:broader tair:MssReq_4.1 ;
+    skos:definition "Where the compliance of the AI systems with the requirements set out in Chapter 2 of this Title has been demonstrated following that conformity assessment, the providers shall draw up an EU declaration of conformity in accordance with Article 48 and affix the CE marking of conformity in accordance with Article 49."@en .
+
+tair:AiaPrReq_19.2 a tair:Requirement ;
+    tair:constrainedBy tair:ConformityAssessment ;
+    tair:decomposes tair:ComformityAssessmentReqColl ;
+    tair:implementedBy tair:Provider ;
+    tair:uses tair:ConformityAssessment,
+        <http://openscience.adaptcentre.ie/ontologies/tair/le_credit_institutions_regulated_by_Directive_2013/36/EU> ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 19(2)"@en ;
+    skos:broader tair:MssReq_4.1 ;
+    skos:definition "For high-risk AI systems referred to in point 5(b) of Annex III that are placed on the market or put into service by providers that are credit institutions regulated by Directive 2013/36/EU, the conformity assessment shall be carried out as part of the procedure referred to in Articles 97 to101 of that Directive."@en .
+
+tair:AiaPrReq_20.1_1 a tair:Requirement ;
+    tair:decomposes tair:AutomaticallyGeneratedLogsReqColl ;
+    tair:implementedBy tair:Provider ;
+    tair:uses tair:le_high_risk_AI_system,
+        tair:le_logs ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 20(1)"@en ;
+    skos:broader tair:MssConjReq_9.1_R1a ;
+    skos:definition "Providers of high-risk AI systems shall keep the logs automatically generated by their high-risk AI systems, to the extent such logs are under their control by virtue of a contractual arrangement with the user or otherwise by law."@en .
+
+tair:AiaPrReq_20.1_2 a tair:Requirement ;
+    tair:decomposes tair:AutomaticallyGeneratedLogsReqColl ;
+    tair:implementedBy tair:Provider ;
+    tair:uses tair:le_logs ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 20(1)"@en ;
+    skos:broader tair:MssConjReq_9.1_R1a,
+        tair:MssConjReq_9.1_R1c ;
+    skos:definition "The logs shall be kept for a period that is appropriate in the light of the intended purpose of high-risk AI system and applicable legal obligations under Union or national law."@en .
+
+tair:AiaPrReq_20.2 a tair:Requirement ;
+    tair:decomposes tair:AutomaticallyGeneratedLogsReqColl ;
+    tair:implementedBy tair:Provider ;
+    tair:uses <http://openscience.adaptcentre.ie/ontologies/tair/le_credit_institutions_regulated_by_Directive_2013/36/EU>,
+        tair:le_high_risk_AI_system,
+        tair:le_logs ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 20(2)"@en ;
+    skos:broader tair:MssConjReq_9.1_R1a,
+        tair:MssReq_4.1 ;
+    skos:definition "Providers that are credit institutions regulated by Directive 2013/36/EU shall maintain the logs automatically generated by their high-risk AI systems as part of the documentation under Articles 74 of that Directive."@en .
+
+tair:AiaPrReq_21.1_1 a tair:Requirement ;
+    tair:constrainedBy tair:le_high_risk_AI_system ;
+    tair:decomposes tair:CorrectiveActionsReqColl ;
+    tair:implementedBy tair:Provider ;
+    tair:uses tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 21(1)"@en ;
+    skos:broader tair:MssReq_10.2_R1a1 ;
+    skos:definition "Providers of high-risk AI systems which consider or have reason to consider that a high-risk AI system which they have placed on the market or put into service is not in conformity with this Regulation shall immediately take the necessary corrective actions to bring that system into conformity, to withdraw it or to recall it, as appropriate."@en .
+
+tair:AiaPrReq_21.1_2 a tair:Requirement ;
+    tair:decomposes tair:CorrectiveActionsReqColl ;
+    tair:implementedBy tair:Provider ;
+    tair:uses tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 21(1)"@en ;
+    skos:broader tair:MssReq_10.2_R1c ;
+    skos:definition "They [Providers of high-risk AI systems which consider or have reason to consider that a high-risk AI system which they have placed on the market or put into service is not in conformity with this Regulation] shall inform the distributors of the high-risk AI system in question and, where applicable, the authorised representative and importers accordingly."@en .
+
+tair:AiaPrReq_22.1 a tair:Requirement ;
+    tair:decomposes tair:DutyOfInformationReqColl ;
+    tair:implementedBy tair:Provider ;
+    tair:uses tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 22(1)"@en ;
+    skos:broader tair:MssReq_10.2_R1c ;
+    skos:definition "Where the high-risk AI system presents a risk within the meaning of Article 65(1) and that risk is known to the provider of the system, that provider shall immediately inform the national competent authorities of the Member States in which it made the system available and, where applicable, the notified body that issued a certificate for the high-risk AI system, in particular of the non-compliance and of any corrective actions taken."@en .
+
+tair:AiaPrReq_23.1_1 a tair:Requirement ;
+    tair:constrainedBy tair:le_high_risk_AI_system ;
+    tair:decomposes tair:CooperationWithCompententAuthoritiesReqColl ;
+    tair:implementedBy tair:Provider ;
+    tair:uses tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 23(1)"@en ;
+    skos:broader tair:MssConjReq_7.5.1_R1b ;
+    skos:definition "Providers of high-risk AI systems shall, upon request by a national competent authority, provide that authority with all the information and documentation necessary to demonstrate the conformity of the high-risk AI system with the requirements set out in Chapter 2 of this Title, in an official Union language determined by the Member State concerned."@en .
+
+tair:AiaPrReq_23.1_2 a tair:Requirement ;
+    tair:constrainedBy tair:le_high_risk_AI_system ;
+    tair:decomposes tair:CooperationWithCompententAuthoritiesReqColl ;
+    tair:implementedBy tair:Provider ;
+    tair:uses tair:le_logs ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 23(1)"@en ;
+    skos:broader tair:MssConjReq_9.1_R2 ;
+    skos:definition "Upon a reasoned request from a national competent authority, providers shall also give that authority access to the logs automatically generated by the high-risk AI system, to the extent such logs are under their control by virtue of a contractual arrangement with the user or otherwise by law."@en .
+
+tair:AiaPrReq_24.1 a tair:Requirement ;
+    tair:constrainedBy tair:le_high_risk_AI_system ;
+    tair:decomposes tair:ObligationsOfProductManufacturersReqColl ;
+    tair:implementedBy tair:le_product_manufacturer ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 24(1)"@en ;
+    skos:definition "Where a high-risk AI system related to products to which the legal acts listed in Annex II, section A, apply, is placed on the market or put into service together with the product manufactured in accordance with those legal acts and under the name of the product manufacturer, the manufacturer of the product shall take the responsibility of the compliance of the AI system with this Regulation and, as far as the AI system is concerned, have the same obligations imposed by the present Regulation on the provider."@en .
+
+tair:AiaPrReq_41.2 a tair:Requirement ;
+    tair:affectedBy tair:AiaPrReq_40.1,
+        tair:AiaPrReq_41.1 ;
+    tair:decomposes tair:CommonSpecificationsReqColl ;
+    tair:implementedBy tair:le_the_commission ;
+    tair:uses tair:le_expert_groups,
+        tair:le_relevant_bodies ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 41(2)"@en ;
+    skos:definition "The Commission, when preparing the common specifications referred to in paragraph 1, shall gather the views of relevant bodies or expert groups established under relevant sectorial Union law."@en .
+
+tair:AiaPrReq_41.3 a tair:Requirement ;
+    tair:affectedBy tair:AiaPrReq_40.1,
+        tair:AiaPrReq_41.1 ;
+    tair:decomposes tair:CommonSpecificationsReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 41(3)"@en ;
+    skos:definition "High-risk AI systems which are in conformity with the common specifications referred to in paragraph 1 shall be presumed to be in conformity with the requirements set out in Chapter 2 of this Title, to the extent those common specifications cover those requirements."@en .
+
+tair:AiaPrReq_41.4 a tair:Requirement ;
+    tair:affectedBy tair:AiaPrReq_40.1,
+        tair:AiaPrReq_41.1 ;
+    tair:decomposes tair:CommonSpecificationsReqColl ;
+    tair:implementedBy tair:Provider ;
+    tair:uses tair:le_technical_solutions ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 41(4)"@en ;
+    skos:definition "Where providers do not comply with the common specifications referred to in paragraph 1, they shall duly justify that they have adopted technical solutions that are at least equivalent thereto."@en .
+
+tair:AiaPrReq_43.1_1 a tair:Requirement ;
+    tair:affectedBy tair:HarmonisedStandardsReqColl,
+        tair:RequirementsForHighRiskAiSystemsReqColl ;
+    tair:decomposes tair:ConformityAssessmentReqColl ;
+    tair:implementedBy tair:Provider ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 43(1)(a)"@en ;
+    skos:definition "[For high-risk AI systems listed in point 1 of Annex III, where, in demonstrating the compliance of a high-risk AI system with the requirements set out in Chapter 2 of this Title, the provider has applied harmonised standards referred to in Article 40, or, where applicable, common specifications referred to in Article 41, the provider shall follow one of the following procedures] the conformity assessment procedure based on internal control referred to in Annex VI"@en .
+
+tair:AiaPrReq_43.1_2 a tair:Requirement ;
+    tair:affectedBy tair:HarmonisedStandardsReqColl,
+        tair:RequirementsForHighRiskAiSystemsReqColl ;
+    tair:decomposes tair:ConformityAssessmentReqColl ;
+    tair:implementedBy tair:Provider ;
+    tair:uses tair:ConformityAssessment ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 43(1)(b)"@en ;
+    skos:definition "[For high-risk AI systems listed in point 1 of Annex III, where, in demonstrating the compliance of a high-risk AI system with the requirements set out in Chapter 2 of this Title, the provider has applied harmonised standards referred to in Article 40, or, where applicable, common specifications referred to in Article 41, the provider shall follow one of the following procedures] the conformity assessment procedure based on internal control referred to in Annex VI"@en .
+
+tair:AiaPrReq_43.1_3 a tair:Requirement ;
+    tair:affectedBy tair:HarmonisedStandardsReqColl,
+        tair:RequirementsForHighRiskAiSystemsReqColl ;
+    tair:constrainedBy tair:HarmonisedStandardsReqColl ;
+    tair:decomposes tair:ConformityAssessmentReqColl ;
+    tair:implementedBy tair:Provider ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 43(1)"@en ;
+    skos:definition "Where, in demonstrating the compliance of a high-risk AI system with the requirements set out in Chapter 2 of this Title, the provider has not applied or has applied only in part harmonised standards referred to in Article 40, or where such harmonised standards do not exist and common specifications referred to in Article 41 are not available, the provider shall follow the conformity assessment procedure set out in Annex VII."@en .
+
+tair:AiaPrReq_43.1_4 a tair:Requirement ;
+    tair:constrainedBy tair:HarmonisedStandardsReqColl ;
+    tair:decomposes tair:ConformityAssessmentReqColl ;
+    tair:implementedBy tair:Provider ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 43(1)"@en ;
+    skos:definition "For the purpose of the conformity assessment procedure referred to in Annex VII, the provider may choose any of the notified bodies. However, when the system is intended to be put into service by law enforcement, immigration or asylum authorities as well as EU institutions, bodies or agencies, the market surveillance authority referred to in Article 63(5) or (6), as applicable, shall act as a notified body."@en .
+
+tair:AiaPrReq_43.2 a tair:Requirement ;
+    tair:constrainedBy tair:le_annex_iii,
+        tair:le_annex_vi ;
+    tair:decomposes tair:ConformityAssessmentReqColl ;
+    tair:implementedBy tair:Provider ;
+    tair:uses tair:ConformityAssessment ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 43(2)"@en ;
+    skos:definition "For high-risk AI systems referred to in points 2 to 8 of Annex III, providers shall follow the conformity assessment procedure based on internal control as referred to in Annex VI, which does not provide for the involvement of a notified body. For high-risk AI systems referred to in point 5(b) of Annex III, placed on the market or put into service by credit institutions regulated by Directive 2013/36/EU, the conformity assessment shall be carried out as part of the procedure referred to in Articles 97 to101 of that Directive."@en .
+
+tair:AiaPrReq_43.3_1 a tair:Requirement ;
+    tair:constrainedBy tair:le_annex_ii_a,
+        tair:le_annex_vii ;
+    tair:decomposes tair:ConformityAssessmentReqColl ;
+    tair:implementedBy tair:Provider ;
+    tair:uses tair:ConformityAssessment ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 43(3)"@en ;
+    skos:definition "For high-risk AI systems, to which legal acts listed in Annex II, section A, apply, the provider shall follow the relevant conformity assessment as required under those legal acts. The requirements set out in Chapter 2 of this Title shall apply to those high-risk AI systems and shall be part of that assessment. Points 4.3., 4.4., 4.5. and the fifth paragraph of point 4.6 of Annex VII shall also apply"@en .
+
+tair:AiaPrReq_43.3_2 a tair:Requirement ;
+    tair:affectedBy tair:AiaPrReq_33_10_1,
+        tair:AiaPrReq_33_10_2,
+        tair:AiaPrReq_33_4_1,
+        tair:AiaPrReq_33_4_2,
+        tair:AiaPrReq_33_9,
+        tair:RequirementsForHighRiskAiSystemsReqColl ;
+    tair:constrainedBy tair:le_annex_ii_a,
+        tair:le_annex_vii ;
+    tair:decomposes tair:ConformityAssessmentReqColl ;
+    tair:implementedBy tair:le_notified_bodies ;
+    tair:uses tair:ConformityAssessment ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 43(3)"@en ;
+    skos:definition "For the purpose of that assessment, notified bodies which have been notified under those legal acts shall be entitled to control the conformity of the high-risk AI systems with the requirements set out in Chapter 2 of this Title, provided that the compliance of those notified bodies with requirements laid down in Article 33(4), (9) and (10) has been assessed in the context of the notification procedure under those legal acts."@en .
+
+tair:AiaPrReq_43.3_3 a tair:Requirement ;
+    tair:constrainedBy tair:le_harmonised_standards ;
+    tair:decomposes tair:ConformityAssessmentReqColl ;
+    tair:implementedBy tair:le_product_manufacturer ;
+    tair:uses tair:ConformityAssessment,
+        tair:le_harmonised_standards ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 43(3)"@en ;
+    skos:definition "Where the legal acts listed in Annex II, section A, enable the manufacturer of the product to opt out from a third-party conformity assessment, provided that that manufacturer has applied all harmonised standards covering all the relevant requirements, that manufacturer may make use of that option only if he has also applied harmonised standards or, where applicable, common specifications referred to in Article 41, covering the requirements set out in Chapter 2 of this Title."@en .
+
+tair:AiaPrReq_43.4_1 a tair:Requirement ;
+    tair:decomposes tair:ConformityAssessmentReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    tair:uses tair:ConformityAssessment ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 43(4)"@en ;
+    skos:definition "High-risk AI systems shall undergo a new conformity assessment procedure whenever they are substantially modified, regardless of whether the modified system is intended to be further distributed or continues to be used by the current user."@en .
+
+tair:AiaPrReq_43.4_2 a tair:Requirement ;
+    tair:constrainedBy tair:le_technical_documentation ;
+    tair:decomposes tair:ConformityAssessmentReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    tair:uses tair:ConformityAssessment,
+        tair:Performance,
+        tair:le_technical_documentation ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 43(4)"@en ;
+    skos:definition "For high-risk AI systems that continue to learn after being placed on the market or put into service, changes to the high-risk AI system and its performance that have been pre-determined by the provider at the moment of the initial conformity assessment and are part of the information contained in the technical documentation referred to in point 2(f) of Annex IV, shall not constitute a substantial modification."@en .
+
+tair:AiaPrReq_43.5 a tair:Requirement ;
+    tair:decomposes tair:ConformityAssessmentReqColl ;
+    tair:implementedBy tair:le_the_commission ;
+    tair:uses tair:ConformityAssessment ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 43(5)"@en ;
+    skos:definition "The Commission is empowered to adopt delegated acts in accordance with Article 73 for the purpose of updating Annexes VI and Annex VII in order to introduce elements of the conformity assessment procedures that become necessary in light of technical progress."@en .
+
+tair:AiaPrReq_43.6_1 a tair:Requirement ;
+    tair:constrainedBy tair:le_annex_iii,
+        tair:le_annex_vii ;
+    tair:decomposes tair:ConformityAssessmentReqColl ;
+    tair:implementedBy tair:le_the_commission ;
+    tair:uses tair:ConformityAssessment ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 43(6)"@en ;
+    skos:definition "The Commission is empowered to adopt delegated acts to amend paragraphs 1 and 2 in order to subject high-risk AI systems referred to in points 2 to 8 of Annex III to the conformity assessment procedure referred to in Annex VII or parts thereof. "@en .
+
+tair:AiaPrReq_43.6_2 a tair:Requirement ;
+    tair:constrainedBy tair:le_annex_vii ;
+    tair:decomposes tair:ConformityAssessmentReqColl ;
+    tair:implementedBy tair:le_the_commission ;
+    tair:uses tair:ConformityAssessment ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 43(6)"@en ;
+    skos:definition "The Commission shall adopt such delegated acts taking into account the effectiveness of the conformity assessment procedure based on internal control referred to in Annex VI in preventing or minimizing the risks to health and safety and protection of fundamental rights posed by such systems as well as the availability of adequate capacities and resources among notified bodies."@en .
+
+tair:AiaPrReq_49.1 a tair:Requirement ;
+    tair:decomposes tair:CeMarkingOfConformityReqColl ;
+    tair:implementedBy tair:CeMarking ;
+    tair:uses tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 49(1)"@en ;
+    skos:definition "The CE marking shall be affixed visibly, legibly and indelibly for high-risk AI systems. Where that is not possible or not warranted on account of the nature of the high-risk AI system, it shall be affixed to the packaging or to the accompanying documentation, as appropriate"@en .
+
+tair:AiaPrReq_49.2 a tair:Requirement ;
+    tair:decomposes tair:CeMarkingOfConformityReqColl ;
+    tair:implementedBy tair:CeMarking ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 49(2)"@en ;
+    skos:definition "The CE marking referred to in paragraph 1 of this Article shall be subject to the general principles set out in Article 30 of Regulation (EC) No 765/2008."@en .
+
+tair:AiaPrReq_49.3 a tair:Requirement ;
+    tair:constrainedBy tair:le_annex_vii ;
+    tair:decomposes tair:CeMarkingOfConformityReqColl ;
+    tair:implementedBy tair:CeMarking ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 49(3)"@en ;
+    skos:definition "Where applicable, the CE marking shall be followed by the identification number of the notified body responsible for the conformity assessment procedures set out in Article 43. The identification number shall also be indicated in any promotional material which mentions that the high-risk AI system fulfils the requirements for CE marking."@en .
+
+tair:AiaPrReq_51.1 a tair:Requirement ;
+    tair:constrainedBy tair:le_high_risk_AI_system ;
+    tair:decomposes tair:RegistrationReqColl ;
+    tair:implementedBy tair:AuthorisedRepresentative,
+        tair:Provider ;
+    tair:uses tair:le_high_risk_AI_system,
+        tair:le_post_market_monitoring_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 51(1)"@en ;
+    skos:definition "Before placing on the market or putting into service a high-risk AI system referred to in Article 6(2), the provider or, where applicable, the authorised representative shall register that system in the EU database referred to in Article 60."@en .
+
+tair:AiaPrReq_61.1 a tair:Requirement ;
+    tair:constrainedBy tair:le_high_risk_AI_system ;
+    tair:decomposes tair:PostMarketMonitoringByProvidersAndPostMarketMonitoringPlanForHighRiskAiSystemsReqColl ;
+    tair:implementedBy tair:Provider ;
+    tair:uses tair:le_high_risk_AI_system,
+        tair:le_post_market_monitoring_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 61(1)"@en ;
+    skos:definition "Providers shall establish and document a post-market monitoring system in a manner that is proportionate to the nature of the artificial intelligence technologies and the risks of the high-risk AI system."@en .
+
+tair:AiaPrReq_61.2 a tair:Requirement ;
+    tair:affectedBy tair:Performance,
+        tair:le_evaluate_the_continuous_compliance_of_ai_systems ;
+    tair:constrainedBy tair:le_high_risk_AI_system ;
+    tair:decomposes tair:PostMarketMonitoringByProvidersAndPostMarketMonitoringPlanForHighRiskAiSystemsReqColl ;
+    tair:implementedBy tair:le_post_market_monitoring_system ;
+    tair:uses tair:le_high_risk_AI_system,
+        tair:le_post_market_monitoring_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 61(2)"@en ;
+    skos:definition "The post-market monitoring system shall actively and systematically collect, document and analyse relevant data provided by users or collected through other sources on the performance of high-risk AI systems throughout their lifetime, and allow the provider to evaluate the continuous compliance of AI systems with the requirements set out in Title III, Chapter 2."@en .
+
+tair:AiaPrReq_61.3_1 a tair:Requirement ;
+    tair:decomposes tair:PostMarketMonitoringByProvidersAndPostMarketMonitoringPlanForHighRiskAiSystemsReqColl ;
+    tair:implementedBy tair:le_post_market_monitoring_system ;
+    tair:uses tair:le_post_market_monitoring_plan ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 61(3)"@en ;
+    skos:definition "The post-market monitoring system shall be based on a post-market monitoring plan. "@en .
+
+tair:AiaPrReq_61.3_2 a tair:Requirement ;
+    tair:affectedBy tair:Performance,
+        tair:le_evaluate_the_continuous_compliance_of_AI_systems ;
+    tair:constrainedBy tair:le_high_risk_AI_system ;
+    tair:decomposes tair:PostMarketMonitoringByProvidersAndPostMarketMonitoringPlanForHighRiskAiSystemsReqColl ;
+    tair:implementedBy tair:le_post_market_monitoring_plan ;
+    tair:uses tair:le_high_risk_AI_system,
+        tair:le_post_market_monitoring_plan ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 61(3)"@en ;
+    skos:definition "The post-market monitoring plan shall be part of the technical documentation referred to in Annex IV. "@en .
+
+tair:AiaPrReq_61.3_3 a tair:Requirement ;
+    tair:constrainedBy tair:le_high_risk_AI_system ;
+    tair:decomposes tair:PostMarketMonitoringByProvidersAndPostMarketMonitoringPlanForHighRiskAiSystemsReqColl ;
+    tair:implementedBy tair:le_commission ;
+    tair:uses tair:le_post_market_monitoring_plan ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 61(3)"@en ;
+    skos:definition "The Commission shall adopt an implementing act laying down detailed provisions establishing a template for the post-market monitoring plan and the list of elements to be included in the plan."@en .
+
+tair:AiaPrReq_61.4_1 a tair:Requirement ;
+    tair:constrainedBy tair:le_high_risk_AI_system ;
+    tair:decomposes tair:PostMarketMonitoringByProvidersAndPostMarketMonitoringPlanForHighRiskAiSystemsReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    tair:uses tair:le_post_market_monitoring_plan ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 61(4)"@en ;
+    skos:definition "For high-risk AI systems covered by the legal acts referred to in Annex II, where a post-market monitoring system and plan is already established under that legislation, the elements described in paragraphs 1, 2 and 3 shall be integrated into that system and plan as appropriate."@en .
+
+tair:AiaPrReq_61.4_2 a tair:Requirement ;
+    tair:constrainedBy tair:le_high_risk_AI_system ;
+    tair:decomposes tair:PostMarketMonitoringByProvidersAndPostMarketMonitoringPlanForHighRiskAiSystemsReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 61(4)"@en ;
+    skos:definition "The first subparagraph [AiaPrReq_61.4_1] shall also apply to high-risk AI systems referred to in point 5(b) of Annex III placed on the market or put into service by credit institutions regulated by Directive 2013/36/EU"@en .
+
+tair:AiaPrReq_62.1 a tair:Requirement ;
+    tair:decomposes tair:ReportingOfSeriousIncidentsAndMalfunctioningReqColl ;
+    tair:implementedBy tair:Provider ;
+    tair:uses tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 62(1)"@en ;
+    skos:definition "Providers of high-risk AI systems placed on the Union market shall report any serious incident or any malfunctioning of those systems which constitutes a breach of obligations under Union law intended to protect fundamental rights to the market surveillance authorities of the Member States where that incident or breach occurred."@en .
+
+tair:AiaPrReq_62.1_1 a tair:Requirement ;
+    tair:decomposes tair:ReportingOfSeriousIncidentsAndMalfunctioningReqColl ;
+    tair:implementedBy tair:Provider ;
+    tair:uses tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 62(1)"@en ;
+    skos:definition "Such notification shall be made immediately after the provider has established a causal link between the AI system and the incident or malfunctioning or the reasonable likelihood of such a link, and, in any event, not later than 15 days after the providers becomes aware of the serious incident or of the malfunctioning"@en .
+
+tair:AiaPrReq_62.2 a tair:Requirement ;
+    tair:decomposes tair:ReportingOfSeriousIncidentsAndMalfunctioningReqColl ;
+    tair:implementedBy tair:MarketSurveillanceAuthority ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 62(2)"@en ;
+    skos:definition "Upon receiving a notification related to a breach of obligations under Union law intended to protect fundamental rights, the market surveillance authority shall inform the national public authorities or bodies referred to in Article 64(3)."@en .
+
+tair:AiaPrReq_64.3_1 a tair:Requirement ;
+    tair:decomposes tair:AccessToDataAndDocumentationReqColl ;
+    tair:implementedBy tair:le_national_public_authorities_or_bodies ;
+    tair:uses tair:le_technical_documentation ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 64(3)"@en ;
+    skos:definition "National public authorities or bodies which supervise or enforce the respect of obligations under Union law protecting fundamental rights in relation to the use of high-risk AI systems referred to in Annex III shall have the power to request and access any documentation created or maintained under this Regulation when access to that documentation is necessary for the fulfilment of the competences under their mandate within the limits of their jurisdiction."@en .
+
+tair:AiaPrReq_64.3_2 a tair:Requirement ;
+    tair:decomposes tair:AccessToDataAndDocumentationReqColl ;
+    tair:implementedBy tair:le_relevant_public_authority_or_body ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 64(3)"@en ;
+    skos:definition "The relevant public authority or body shall inform the market surveillance authority of the Member State concerned of any such request."@en .
+
+tair:AiaPrReq_65.1 a tair:Requirement ;
+    tair:constrainedBy tair:le_high_risk_AI_system ;
+    tair:decomposes tair:ProcedureForDealingWithAISystemsPresentingAriskAtNationalLevelReqColl ;
+    tair:implementedBy tair:AISystem ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 65(1)"@en ;
+    skos:definition "AI systems presenting a risk shall be understood as a product presenting a risk defined in Article 3, point 19 of Regulation (EU) 2019/1020 insofar as risks to the health or safety or to the protection of fundamental rights of persons are concerned."@en .
+
+tair:AiaPrReq_8.1_1 a tair:Requirement ;
+    tair:decomposes tair:ComplianceWithTheRequirementsReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 8(1)"@en ;
+    skos:broader tair:MssReq_4.1 ;
+    skos:definition "High-risk AI systems shall comply with the requirements established in this Chapter."@en .
+
+tair:AiaPrReq_8.1_2 a tair:Requirement ;
+    tair:decomposes tair:ComplianceWithTheRequirementsReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    tair:uses tair:le_high_risk_AI_system,
+        tair:le_risk_management_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 8(2)"@en ;
+    skos:broader tair:AimssConjReq_4.1_R1.1 ;
+    skos:definition "The intended purpose of the high-risk AI system and the risk management system referred to in Article 9 shall be taken into account when ensuring compliance with those requirements."@en .
+
+tair:AiaPrReq_9.1 a tair:Requirement ;
+    tair:decomposes tair:RiskManagementSystemReqColl ;
+    tair:implementedBy tair:le_risk_management_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 9(1)"@en ;
+    skos:definition "A risk management system shall be established, implemented, documented and maintained in relation to high-risk AI systems."@en ;
+    skos:related tair:AimssReqSpec_6.1.1b .
+
+tair:AiaPrReq_9.2_2 a tair:Requirement ;
+    tair:decomposes tair:RiskManagementSystemReqColl ;
+    tair:implementedBy tair:le_continuous_iterative_process ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 9(2)(a)"@en ;
+    skos:definition "[The continuous iterative process] shall [comprise] identification and analysis of the known and foreseeable risks associated with each high-risk AI system"@en .
+
+tair:AiaPrReq_9.2_3 a tair:Requirement ;
+    tair:satisfiedBy tair:le_risk_management_system ;
+    tair:uses tair:AiaPrReq_9.2_1 ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 9(2)(b)"@en ;
+    skos:definition "[The continuous iterative process] shall [comprise] the following steps: estimation and evaluation of the risks that may emerge when the high-risk AI system is used in accordance with its intended purpose and under conditions of reasonably foreseeable misuse"@en .
+
+tair:AiaPrReq_9.2_4 a tair:Requirement ;
+    tair:satisfiedBy tair:le_risk_management_system ;
+    tair:uses tair:AiaPrReq_9.2_1 ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 9(2)(c)"@en ;
+    skos:definition "[The continuous iterative process] shall [comprise] the following steps: evaluation of other possibly arising risks based on the analysis of data gathered from the post-market monitoring system referred to in Article 61"@en .
+
+tair:AiaPrReq_9.2_5 a tair:Requirement ;
+    tair:affectedBy tair:AiaPrReq_9.2_1,
+        tair:AiaPrReq_9.3_1,
+        tair:AiaPrReq_9.3_2,
+        tair:AiaPrReq_9.4_1,
+        tair:AiaPrReq_9.4_2,
+        tair:AiaPrReq_9.4_3,
+        tair:AiaPrReq_9.4_4,
+        tair:AiaPrReq_9.4_5,
+        tair:AiaPrReq_9.4_6,
+        tair:AiaPrReq_9.5_1,
+        tair:AiaPrReq_9.5_2,
+        tair:AiaPrReq_9.6_1,
+        tair:AiaPrReq_9.7_1,
+        tair:AiaPrReq_9.7_2,
+        tair:AiaPrReq_9.8_1,
+        tair:AiaPrReq_9.9_1 ;
+    tair:decomposes tair:RiskManagementSystemReqColl ;
+    tair:implementedBy tair:le_continuous_iterative_process ;
+    tair:uses tair:le_risk_management_measures ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 9(2)(d)"@en ;
+    skos:definition "[The continuous iterative process] shall [comprise] the following steps: adoption of suitable risk management measures in accordance with the provisions of the following paragraphs"@en .
+
+tair:AiaPrReq_10.2_2 a tair:Requirement ;
+    tair:decomposes tair:DataAndDataGovernanceReqColl ;
+    tair:implementedBy tair:le_data_governance_practices,
+        tair:le_data_management_practices ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 10(2)(a)"@en ;
+    skos:definition "Those [data governance and management] [practices shall concern in particular] the relevant design choices"@en .
+
+tair:AiaPrReq_10.2_3 a tair:Requirement ;
+    tair:decomposes tair:DataAndDataGovernanceReqColl ;
+    tair:implementedBy tair:le_data_governance_practices,
+        tair:le_data_management_practices ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 10(2)(b)"@en ;
+    skos:definition "Those [data governance and management] [practices shall concern in particular] data collection"@en .
+
+tair:AiaPrReq_10.2_4 a tair:Requirement ;
+    tair:affectedBy tair:AiaPrReq_10.2_1,
+        tair:le_data_preparation_operations ;
+    tair:decomposes tair:DataAndDataGovernanceReqColl ;
+    tair:implementedBy tair:le_data_governance_practices,
+        tair:le_data_management_practices ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 10(2)(c)"@en ;
+    skos:definition "Those [data governance and management] [practices shall concern in particular] relevant data preparation processing operations, such as annotation, labelling, cleaning, enrichment and aggregation"@en .
+
+tair:AiaPrReq_10.2_5 a tair:Requirement ;
+    tair:decomposes tair:DataAndDataGovernanceReqColl ;
+    tair:implementedBy tair:le_data_governance_practices,
+        tair:le_data_management_practices ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 10(2)(d)"@en ;
+    skos:definition "Those [data governance and management] [practices shall concern in particular] the formulation of relevant assumptions, notably with respect to the information that the data are supposed to measure and represent;"@en .
+
+tair:AiaPrReq_10.2_6 a tair:Requirement ;
+    tair:decomposes tair:DataAndDataGovernanceReqColl ;
+    tair:implementedBy tair:le_data_governance_practices,
+        tair:le_data_management_practices ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 10(2)(e)"@en ;
+    skos:definition "Those [data governance and management] [practices shall concern in particular] a prior assessment of the availability, quantity and suitability of the data sets that are needed."@en .
+
+tair:AiaPrReq_10.2_7 a tair:Requirement ;
+    tair:affectedBy tair:AiaPrReq_10.2_1,
+        tair:le_bias ;
+    tair:decomposes tair:DataAndDataGovernanceReqColl ;
+    tair:implementedBy tair:le_data_governance_practices,
+        tair:le_data_management_practices ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 10(2)(f)"@en ;
+    skos:definition "Those [data governance and management] [practices shall concern in particular] examination in view of possible biases"@en .
+
+tair:AiaPrReq_17.1_a a tair:Requirement ;
+    tair:decomposes tair:QualityManagementSystemReqColl ;
+    tair:implementedBy tair:Provider ;
+    tair:uses tair:le_quality_management_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 17(1)"@en ;
+    skos:broader tair:MssReq_4.1 ;
+    skos:definition "Providers of high-risk AI systems shall put a quality management system in place that ensures compliance with this Regulation."@en .
+
+tair:AiaPrReq_17.1_b a tair:Requirement ;
+    tair:decomposes tair:QualityManagementSystemReqColl ;
+    tair:implementedBy tair:le_quality_management_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 17(1)"@en ;
+    skos:broader tair:CreatingAndUpdatingDocumentedInformationReqColl ;
+    skos:definition "That [quality management] system shall be documented in a systematic and orderly manner in the form of written policies, procedures and instructions."@en .
+
+tair:AiaPrReq_17.1_c_1 a tair:Requirement ;
+    tair:decomposes tair:QualityManagementSystemReqColl ;
+    tair:implementedBy tair:le_quality_management_system ;
+    tair:uses tair:ConformityAssessment ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 17(1)(a)"@en ;
+    skos:broader tair:AimssConjReq_4.1_R1.1 ;
+    skos:definition "That [quality management] [shall include at least the following aspects] a strategy for regulatory compliance, including compliance with conformity assessment procedures and procedures for the management of modifications to the high-risk AI system"@en .
+
+tair:AiaPrReq_17.1_c_10 a tair:Requirement ;
+    tair:decomposes tair:QualityManagementSystemReqColl ;
+    tair:implementedBy tair:le_quality_management_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 17(1)(j)"@en ;
+    skos:broader tair:AimssConjReq_4.1_R1.1 ;
+    skos:definition "That [quality management system] [shall include at least the following aspects] the handling of communication with national competent authorities, competent authorities, including sectoral ones, providing or supporting the access to data, notified bodies, other operators, customers or other interested parties"@en .
+
+tair:AiaPrReq_17.1_c_11 a tair:Requirement ;
+    tair:decomposes tair:QualityManagementSystemReqColl ;
+    tair:implementedBy tair:le_quality_management_system ;
+    tair:uses tair:le_systems_and_procedures_for_record ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 17(1)(k)"@en ;
+    skos:broader tair:AimssConjReq_4.1_R1.1 ;
+    skos:definition "That [quality management system] [shall include at least the following aspects] systems and procedures for record keeping of all relevant documentation and information"@en .
+
+tair:AiaPrReq_17.1_c_12 a tair:Requirement ;
+    tair:decomposes tair:QualityManagementSystemReqColl ;
+    tair:implementedBy tair:le_quality_management_system ;
+    tair:uses tair:le_resource_management ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 17(1)(l)"@en ;
+    skos:broader tair:AimssConjReq_4.1_R1.1 ;
+    skos:definition "That [quality management system] [shall include at least the following aspects] resource management, including security of supply related measures"@en .
+
+tair:AiaPrReq_17.1_c_2 a tair:Requirement ;
+    tair:decomposes tair:QualityManagementSystemReqColl ;
+    tair:implementedBy tair:le_quality_management_system ;
+    tair:uses tair:le_design_control_of_the_high_risk_AI_system,
+        tair:le_design_of_the_high_risk_AI_system,
+        <http://openscience.adaptcentre.ie/ontologies/tair/le_design_verification_of_the_high_risk_AI_system.> ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 17(1)(b)"@en ;
+    skos:broader tair:AimssConjReq_4.1_R1.1 ;
+    skos:definition "That [quality management system] [shall include at least the following aspects] techniques, procedures and systematic actions to be used for the design, design control and design verification of the high-risk AI system"@en .
+
+tair:AiaPrReq_17.1_c_3 a tair:Requirement ;
+    tair:decomposes tair:QualityManagementSystemReqColl ;
+    tair:implementedBy tair:le_quality_management_system ;
+    tair:uses tair:le_quality_assurance_high-risk_AI_system,
+        tair:le_quality_control_high-risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 17(1)(c)"@en ;
+    skos:broader tair:AimssConjReq_4.1_R1.1 ;
+    skos:definition "That quality management system] [shall include at least the following aspects] techniques, procedures and systematic actions to be used for the development, quality control and quality assurance of the high-risk AI system."@en .
+
+tair:AiaPrReq_17.1_c_4 a tair:Requirement ;
+    tair:decomposes tair:QualityManagementSystemReqColl ;
+    tair:implementedBy tair:le_quality_management_system ;
+    tair:uses tair:le_examination_procedure_of_the_high_risk_AI_system,
+        tair:le_test_procedure_of_the_high_risk_AI_system,
+        tair:le_validation_procedure_of_the_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 17(1)(d)"@en ;
+    skos:broader tair:AimssConjReq_4.1_R1.1 ;
+    skos:definition "That [quality management system] [shall include at least the following aspects] examination, test and validation procedures to be carried out before, during and after the development of the high-risk AI system, and the frequency with which they have to be carried out"@en .
+
+tair:AiaPrReq_17.1_c_5 a tair:Requirement ;
+    tair:decomposes tair:QualityManagementSystemReqColl ;
+    tair:implementedBy tair:le_quality_management_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 17(1)(e)"@en ;
+    skos:broader tair:AimssConjReq_4.1_R1.1 ;
+    skos:definition "That [quality management system] [shall include at least the following aspects] technical specifications, including standards, to be applied and, where the relevant harmonised standards are not applied in full, the means to be used to ensure that the high-risk AI system complies with the requirements set out in Chapter 2 of this Title"@en .
+
+tair:AiaPrReq_17.1_c_6 a tair:Requirement ;
+    tair:decomposes tair:QualityManagementSystemReqColl ;
+    tair:implementedBy tair:le_quality_management_system ;
+    tair:uses tair:le_systems_and_procedures_for_data_management ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 17(1)(f)"@en ;
+    skos:broader tair:AimssConjReq_4.1_R1.1 ;
+    skos:definition "That [quality management system] [shall include at least the following aspects] systems and procedures for data management, including data collection, data analysis, data labelling, data storage, data filtration, data mining, data aggregation, data retention and any other operation regarding the data that is performed before and for the purposes of the placing on the market or putting into service of high-risk AI systems;"@en .
+
+tair:AiaPrReq_17.1_c_7 a tair:Requirement ;
+    tair:decomposes tair:QualityManagementSystemReqColl ;
+    tair:implementedBy tair:le_quality_management_system ;
+    tair:uses tair:le_risk_management_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 17(1)(g)"@en ;
+    skos:broader tair:AimssConjReq_4.1_R1.1 ;
+    skos:definition "That [quality management system] [shall include at least the following aspects] the risk management system referred to in Article 9"@en .
+
+tair:AiaPrReq_17.1_c_8 a tair:Requirement ;
+    tair:decomposes tair:QualityManagementSystemReqColl ;
+    tair:implementedBy tair:le_quality_management_system ;
+    tair:uses tair:le_post_market_monitoring_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 17(1)(h)"@en ;
+    skos:broader tair:AimssConjReq_4.1_R1.1 ;
+    skos:definition "That [quality management system] [shall include at least the following aspects] the setting-up, implementation and maintenance of a post-market monitoring system, in accordance with Article 61"@en .
+
+tair:AiaPrReq_17.1_c_9 a tair:Requirement ;
+    tair:decomposes tair:QualityManagementSystemReqColl ;
+    tair:implementedBy tair:le_quality_management_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 17(1)(i)"@en ;
+    skos:broader tair:AimssConjReq_4.1_R1.1 ;
+    skos:definition "That [quality management system] [shall include at least the following aspects] procedures related to the reporting of serious incidents and of malfunctioning in accordance with Article 62"@en .
+
+tair:AiaPrReq_33_10_1 a tair:Requirement ;
+    tair:decomposes tair:NotifiedBodiesReqColl ;
+    tair:implementedBy tair:le_notified_bodies ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 33(10)"@en ;
+    skos:definition "Notified bodies shall have sufficient internal competences to be able to effectively evaluate the tasks conducted by external parties on their behalf. "@en .
+
+tair:AiaPrReq_33_10_2 a tair:Requirement ;
+    tair:decomposes tair:NotifiedBodiesReqColl ;
+    tair:implementedBy tair:le_notified_bodies ;
+    tair:uses tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 33(10)"@en ;
+    skos:definition "To that end, at all times and for each conformity assessment procedure and each type of high-risk AI system in relation to which they have been designated, the notified body shall have permanent availability of sufficient administrative, technical and scientific personnel who possess experience and knowledge relating to the relevant artificial intelligence technologies, data and data computing and to the requirements set out in Chapter 2 of this Title."@en .
+
+tair:AiaPrReq_33_4_1 a tair:Requirement ;
+    tair:decomposes tair:NotifiedBodiesReqColl ;
+    tair:implementedBy tair:le_notified_bodies ;
+    tair:uses tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 33(4)"@en ;
+    skos:definition "Notified bodies shall be independent of the provider of a high-risk AI system in relation to which it performs conformity assessment activities. "@en .
+
+tair:AiaPrReq_33_4_2 a tair:Requirement ;
+    tair:decomposes tair:NotifiedBodiesReqColl ;
+    tair:implementedBy tair:le_notified_bodies ;
+    tair:uses tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 33(4)"@en ;
+    skos:definition "Notified bodies shall also be independent of any other operator having an economic interest in the high-risk AI system that is assessed, as well as of any competitors of the provider."@en .
+
+tair:AiaPrReq_33_9 a tair:Requirement ;
+    tair:decomposes tair:NotifiedBodiesReqColl ;
+    tair:implementedBy tair:le_notified_bodies ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 33(9)"@en ;
+    skos:definition "Notified bodies shall be capable of carrying out all the tasks falling to them under this Regulation with the highest degree of professional integrity and the requisite competence in the specific field, whether those tasks are carried out by notified bodies themselves or on their behalf and under their responsibility."@en .
+
+tair:AiaPrReq_9.3_1 a tair:Requirement ;
+    tair:decomposes tair:RiskManagementSystemReqColl ;
+    tair:implementedBy tair:le_risk_management_measures ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 9(3)"@en ;
+    skos:definition "The risk management measures referred to in paragraph 2, point (d) shall give due consideration to the effects and possible interactions resulting from the combined application of the requirements set out in this Chapter 2."@en ;
+    skos:related tair:AimssReqSpec_6.1.1b .
+
+tair:AiaPrReq_9.3_2 a tair:Requirement ;
+    tair:decomposes tair:RiskManagementSystemReqColl ;
+    tair:implementedBy tair:le_risk_management_measures ;
+    tair:uses tair:CommonSpecifications,
+        tair:le_harmonised_standards ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 9(3)"@en ;
+    skos:definition "They [risk management measures] shall take into account the generally acknowledged state of the art, including as reflected in relevant harmonised standards or common specifications."@en ;
+    skos:related tair:AimssReqSpec_6.1.1b .
+
+tair:AiaPrReq_9.4_1 a tair:Requirement ;
+    tair:decomposes tair:RiskManagementSystemReqColl ;
+    tair:implementedBy tair:le_risk_management_measures ;
+    tair:uses tair:IntendedPurpose,
+        tair:ReasonablyForseeableMisuse,
+        tair:le_residual_risk ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 9(4)"@en ;
+    skos:definition "The risk management measures referred to in paragraph 2, point (d) shall be such that any residual risk associated with each hazard as well as the overall residual risk of the high-risk AI systems is judged acceptable, provided that the high-risk AI system is used in accordance with its intended purpose or under conditions of reasonably foreseeable misuse."@en ;
+    skos:related tair:AimssReqSpec_6.1.1b .
+
+tair:AiaPrReq_9.4_2 a tair:Requirement ;
+    tair:decomposes tair:RiskManagementSystemReqColl ;
+    tair:implementedBy tair:le_residual_risk ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 9(4)"@en ;
+    skos:definition "Those residual risks shall be communicated to the user."@en ;
+    skos:related tair:AimssReqSpec_6.1.1b .
+
+tair:AiaPrReq_9.4_3 a tair:Requirement ;
+    tair:decomposes tair:RiskManagementSystemReqColl ;
+    tair:implementedBy tair:le_risk_management_measures ;
+    tair:uses tair:le_risk_management_measures ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 9(4)(a)"@en ;
+    skos:definition "[In identifying the most appropriate risk management measures, the following shall be ensured:]  elimination or reduction of risks as far as possible through adequate design and development;"@en ;
+    skos:related tair:AimssReqSpec_6.1.1b .
+
+tair:AiaPrReq_9.4_4 a tair:Requirement ;
+    tair:decomposes tair:RiskManagementSystemReqColl ;
+    tair:implementedBy tair:le_risk_management_measures ;
+    tair:uses tair:le_risk_management_measures ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 9(4)(b)"@en ;
+    skos:definition "[In identifying the most appropriate risk management measures, the following shall be ensured:] where appropriate, implementation of adequate mitigation and control measures in relation to risks that cannot be eliminated;"@en ;
+    skos:related tair:AimssReqSpec_6.1.1b .
+
+tair:AiaPrReq_9.4_5 a tair:Requirement ;
+    tair:decomposes tair:RiskManagementSystemReqColl ;
+    tair:implementedBy tair:le_risk_management_measures ;
+    tair:uses tair:le_risk_management_measures ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 9(4)(c)"@en ;
+    skos:definition "[In identifying the most appropriate risk management measures, the following shall be ensured:] provision of adequate information pursuant to Article 13, in particular as regards the risks referred to in paragraph 2, point (b) of this Article, and, where appropriate, training to users."@en ;
+    skos:related tair:AimssReqSpec_6.1.1b .
+
+tair:AiaPrReq_9.4_6 a tair:Requirement ;
+    tair:decomposes tair:RiskManagementSystemReqColl ;
+    tair:implementedBy tair:le_eliminating_or_reducing_risks ;
+    tair:uses tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 9(4)"@en ;
+    skos:definition "In eliminating or reducing risks related to the use of the high-risk AI system, due consideration shall be given to the technical knowledge, experience, education, training to be expected by the user and the environment in which the system is intended to be used."@en ;
+    skos:related tair:AimssReqSpec_6.1.1b .
+
+tair:AiaPrReq_9.5_1 a tair:Requirement ;
+    tair:decomposes tair:RiskManagementSystemReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 9(5)"@en ;
+    skos:definition "High-risk AI systems shall be tested for the purposes of identifying the most appropriate risk management measures. "@en ;
+    skos:related tair:AimssReqSpec_6.1.1b .
+
+tair:AiaPrReq_9.5_2 a tair:Requirement ;
+    tair:decomposes tair:RiskManagementSystemReqColl ;
+    tair:implementedBy tair:le_testing_of_high_risk_AI_systems ;
+    tair:uses tair:IntendedPurpose,
+        tair:PerformanceOfAnAISystem,
+        tair:le_perform_consistently_for_their_intended_purpose ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 9(5)"@en ;
+    skos:definition "Testing shall ensure that high-risk AI systems perform consistently for their intended purpose and they are in compliance with the requirements set out in this Chapter."@en ;
+    skos:related tair:AimssReqSpec_6.1.1b .
+
+tair:AiaPrReq_9.6_1 a tair:Requirement ;
+    tair:decomposes tair:RiskManagementSystemReqColl ;
+    tair:implementedBy tair:le_testing_procedures ;
+    tair:uses tair:IntendedPurpose ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 9(6)"@en ;
+    skos:definition "Testing procedures shall be suitable to achieve the intended purpose of the AI system and do not need to go beyond what is necessary to achieve that purpose."@en ;
+    skos:related tair:AimssReqSpec_6.1.1b .
+
+tair:AiaPrReq_9.7_1 a tair:Requirement ;
+    tair:decomposes tair:RiskManagementSystemReqColl ;
+    tair:implementedBy tair:le_testing_of_high_risk_AI_systems ;
+    tair:uses tair:le_development_process,
+        tair:le_placing_on_the_market,
+        tair:le_putting_into_service ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 9(7)"@en ;
+    skos:definition "The testing of the high-risk AI systems shall be performed, as appropriate, at any point in time throughout the development process, and, in any event, prior to the placing on the market or the putting into service. "@en ;
+    skos:related tair:AimssReqSpec_6.1.1b .
+
+tair:AiaPrReq_9.7_2 a tair:Requirement ;
+    tair:decomposes tair:RiskManagementSystemReqColl ;
+    tair:implementedBy tair:le_testing_of_high_risk_AI_systems ;
+    tair:uses tair:IntendedPurpose,
+        tair:le_preliminarily_defined_metrics,
+        tair:le_preliminarily_defined_probablistic_thresholds ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 9(7)"@en ;
+    skos:definition "Testing shall be made against preliminarily defined metrics and probabilistic thresholds that are appropriate to the intended purpose of the high-risk AI system."@en ;
+    skos:related tair:AimssReqSpec_6.1.1b .
+
+tair:AiaPrReq_9.8_1 a tair:Requirement ;
+    tair:decomposes tair:RiskManagementSystemReqColl ;
+    tair:implementedBy tair:le_risk_management_measures ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 9(8)"@en ;
+    skos:definition "When implementing the risk management system described in paragraphs 1 to 7, specific consideration shall be given to whether the high-risk AI system is likely to be accessed by or have an impact on children."@en ;
+    skos:related tair:AimssReqSpec_6.1.1b .
+
+tair:AiaPrReq_9.9_1 a tair:Requirement ;
+    tair:decomposes tair:RiskManagementSystemReqColl ;
+    tair:implementedBy tair:le_credit_institution ;
+    tair:uses tair:le_risk_management_procedure ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 9(9)"@en ;
+    skos:broader tair:MssReq_4.1 ;
+    skos:definition "For credit institutions regulated by Directive 2013/36/EU, the aspects described in paragraphs 1 to 8 shall be part of the risk management procedures established by those institutions pursuant to Article 74 of that Directive."@en .
+
+tair:AiaPrReq_10.2_8 a tair:Requirement ;
+    tair:affectedBy tair:AiaPrReq_10.2_1,
+        tair:le_data_gaps_or_shortcomings ;
+    tair:decomposes tair:DataAndDataGovernanceReqColl ;
+    tair:implementedBy tair:le_data_governance_practices,
+        tair:le_data_management_practices ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 10(2)(g)"@en ;
+    skos:definition "Those [data governance and management] [practices shall concern in particular] the identification of any possible data gaps or shortcomings, and how those gaps and shortcomings can be addressed."@en .
+
+tair:AiaPrReq_13.2 a tair:Requirement ;
+    tair:decomposes tair:TransparencyAndProvisionOfInformationToUsersReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 13(2)"@en ;
+    skos:definition "High-risk AI systems shall be accompanied by instructions for use in an appropriate digital format or otherwise that include concise, complete, correct and clear information that is relevant, accessible and comprehensible to users."@en ;
+    skos:related tair:MssConjReq_8.1_R2 .
+
+tair:AiaPrReq_40.1 a tair:Requirement ;
+    tair:decomposes tair:HarmonisedStandardsReqColl ;
+    tair:implementedBy tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 40(1)"@en ;
+    skos:definition "High-risk AI systems which are in conformity with harmonised standards or parts thereof the references of which have been published in the Official Journal of the European Union shall be presumed to be in conformity with the requirements set out in Chapter 2 of this Title, to the extent those standards cover those requirements."@en .
+
+tair:AiaPrReq_41.1 a tair:Requirement ;
+    tair:affectedBy tair:HarmonisedStandardsReqColl,
+        tair:RequirementsForHighRiskAiSystemsReqColl ;
+    tair:decomposes tair:CommonSpecificationsReqColl ;
+    tair:implementedBy tair:le_the_commission ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 41(1)"@en ;
+    skos:definition "Where harmonised standards referred to in Article 40 do not exist or where the Commission considers that the relevant harmonised standards are insufficient or that there is a need to address specific safety or fundamental right concerns, the Commission may, by means of implementing acts, adopt common specifications in respect of the requirements set out in Chapter 2 of this Title. Those implementing acts shall be adopted in accordance with the examination procedure referred to in Article 74(2)."@en .
+
+tair:AiaPrReq_9.2_1 a tair:Requirement ;
+    tair:decomposes tair:RiskManagementSystemReqColl ;
+    tair:implementedBy tair:le_risk_management_system ;
+    tair:uses tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 9(2)"@en ;
+    skos:definition "The risk management system shall consist of a continuous iterative process run throughout the entire lifecycle of a high-risk AI system, requiring regular systematic updating. "@en ;
+    skos:related tair:AimssReqSpec_6.1.1b .
+
+tair:AiaPrReq_10.2_1 a tair:Requirement ;
+    tair:decomposes tair:DataAndDataGovernanceReqColl ;
+    tair:implementedBy tair:le_training_validation_and_testing_data_sets ;
+    tair:uses tair:le_data_governance_practices,
+        tair:le_data_management_practices ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 10(2)"@en ;
+    skos:definition "Training, validation and testing data sets shall be subject to appropriate data governance and management practices."@en ;
+    skos:related tair:MssConjReq_9.1_R1b .
+
+tair:AiaPrReq_14.3_1 a tair:Requirement ;
+    tair:decomposes tair:HumanOversightReqColl ;
+    tair:implementedBy tair:le_human_oversight ;
+    tair:uses tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 14(3)(a)"@en ;
+    skos:definition "[Human oversight shall be ensured through either one or all of the following measures] identified and built, when technically feasible, into the high-risk AI system by the provider before it is placed on the market or put into service."@en ;
+    skos:related tair:MssConjReq_5.3_R1,
+        tair:MssConjReq_9.1_R1b .
+
+tair:AiaPrReq_14.3_2 a tair:Requirement ;
+    tair:affectedBy tair:Provider,
+        tair:User ;
+    tair:decomposes tair:HumanOversightReqColl ;
+    tair:implementedBy tair:le_human_oversight ;
+    tair:uses tair:le_high_risk_AI_system ;
+    dct:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206> ;
+    skos:altLabel "Article 14(3)(b)"@en ;
+    skos:definition "[Human oversight shall be ensured through either one or all of the following measures] identified by the provider before placing the high-risk AI system on the market or putting it into service and that are appropriate to be implemented by the user."@en ;
+    skos:related tair:MssConjReq_5.3_R1,
+        tair:MssConjReq_9.1_R1b .
+
