@@ -1,0 +1,80 @@
+Requirement,skos:prefLabel,skos:altLabel,skos:definition,skos:broader,skos:related,tair:decomposes
+AiActTitleIIIHigh-RiskAiSystemsReqColl,High-risk AI Systems,Title III,,,,
+AiActTitleIIIChapter2ReqColl,Requirements for high-risk AI systems,Chapter 2,,,,AiActTitleIIIHigh-RiskAiSystemsReqColl
+AiActChapter2Article8ReqColl,Compliance with the requirements,Article 8,,,,AiActTitleIIIChapter2ReqColl
+AiActChapter2Article9ReqColl,Compliance with the requirements,Article 9,,,AimssReqSpec_6.1.1_S2,AiActTitleIIIChapter2ReqColl
+AiaPrReqColl_9.2,Compliance with the requirements - Article 9.2,Article 9.2,,,,AiActChapter2Article9ReqColl
+AiaPrReqColl_9.3,Compliance with the requirements - Article 9.3,Article 9.3,,,,AiActChapter2Article9ReqColl
+AiaPrReqColl_9.4,Compliance with the requirements - Article 9.4,Article 9.4,,,,AiActChapter2Article9ReqColl
+AiaPrReqColl_9.4_R3,Compliance with the requirements - Article 9.4_R3,Article 9.4_R3,,,,AiaPrReqColl_9.4
+AiaPrReqColl_9.5,Compliance with the requirements - Article 9.5,Article 9.5,,,,AiActChapter2Article9ReqColl
+AiaPrReqColl_9.7,Compliance with the requirements - Article 9.7,Article 9.7,,,,AiActChapter2Article9ReqColl
+AiActChapter2Article10ReqColl,Data and data governance,Article 10,,,"Monitoring,Measurement,Analysis,AndEvaluationReqColl",AiActTitleIIIChapter2ReqColl
+AiaPrReqColl_10.2,Data and data governance - Article 10.2,Article 10.2,,,,AiActChapter2Article10ReqColl
+AiaPrReqColl_10.2_R2,Data and data governance - Article 10.2_R2,Article 10.2_R2,,,,AiaPrReqColl_10.2
+AiaPrReqColl_10.3,Data and data governance - Article 10.3,Article 10.3,,,,AiActChapter2Article10ReqColl
+AiActChapter2Article11ReqColl,Technical documentation,Article 11,,,DocumentedInformationGeneralReqColl,AiActTitleIIIChapter2ReqColl
+AiaPrReqColl_11.1,Technical documentation - Article 11.1,Article 11.1,,,,AiActChapter2Article11ReqColl
+AiActChapter2Article12ReqColl,Record-keeping,Article 12,,,,AiActTitleIIIChapter2ReqColl
+AiaPrReqColl_12.4,Record-keeping - Article 12.4,Article 12.4,,,,AiActChapter2Article12ReqColl
+AiActChapter2Article13ReqColl,Transparency and provision of information to users,Article 13,,,,AiActTitleIIIChapter2ReqColl
+AiaPrReqColl_13.3_R1,Transparency and provision of information to users - Article 13.3_R1,Article 13.3_R1,,,,AiActChapter2Article13ReqColl
+AiaPrReqColl_13.3_R1b,Transparency and provision of information to users - Article 13.3_R1b,Article 13.3_R1b,,,,AiaPrReqColl_13.3_R1
+AiActChapter2Article14ReqColl,Human oversight,Article 14,,,,AiActTitleIIIChapter2ReqColl
+AiaPrReqColl_14.3,Human oversight - Article 14.3,Article 14.3,,,"AimssRolesResponsabilitiesAndAuthoritiesReqColl, AimssMonitoringMeasurementAnalysisAndEvaluationReqColl",AiActChapter2Article14ReqColl
+AiaPrReqColl_14.4,Human oversight - Article 14.4,Article 14.4,,,"AimssRolesResponsabilitiesAndAuthoritiesReqColl, AimssCompetenceReqColl",AiActChapter2Article14ReqColl
+AiActChapter2Article15ReqColl,"Accuracy, robustness and cybersecurity",Article 15,,,,AiActTitleIIIChapter2ReqColl
+AiaPrReqColl_15.3,"Accuracy, robustness and cybersecurity - Article 15.3",Article 15.3,,,,AiActChapter2Article15ReqColl
+AiaPrReqColl_15.4,"Accuracy, robustness and cybersecurity - Article 15.4",Article 15.4,,,,AiActChapter2Article15ReqColl
+AiActTitleIIIChapter3ReqColl,Obligations for providers and users of high-risk AI systems and other parties,Chapter 3,,,,AiActTitleIIIHigh-RiskAiSystemsReqColl
+AiActChapter3Article16ReqColl,Obligations of providers of high-risk Ai systems,Article 16,,,,AiActTitleIIIChapter3ReqColl
+AiaPrReqColl_16.1_R1,Obligations of providers of high-risk Ai systems - Article 16.1_R1,Article 16.1_R1,,,,AiActChapter3Article16ReqColl
+AiActChapter3Article17ReqColl,Quality management system,Article 17,,,,AiActTitleIIIChapter3ReqColl
+AiaPrReqColl_17.1,Quality management system - Article 17.1,Article 17.1,,,,AiActChapter3Article17ReqColl
+AiaPrReqColl_17.1_R3,Quality management system - Article 17.1_R3,Article 17.1_R3,,,,AiaPrReqColl_17.1
+AiActChapter3Article18ReqColl,Obligation to draw up technical documentation,Article 18,,,,AiActTitleIIIChapter3ReqColl
+AiActChapter3Article19ReqColl,Conformity assessment,Article 19,,,,AiActTitleIIIChapter3ReqColl
+AiaPrReqColl_19.1,Conformity assessment - Article 19.1,Article 19.1,,,,AiActChapter3Article19ReqColl
+AiActChapter3Article20ReqColl,Automatically generated logs,Article 20,,,,AiActTitleIIIChapter3ReqColl
+AiaPrReqColl_20.1,Automatically generated logs - Article 20.1,Article 20.1,,,AimssMonitoringMeasurementAnalysisAndEvaluationReqColl,AiActChapter3Article20ReqColl
+AiActChapter3Article21ReqColl,Corrective actions,Article 21,,,,AiActTitleIIIChapter3ReqColl
+AiaPrReqColl_21.1,Corrective actions - Article 21.1,Article 21.1,,,AimssNonconformityAndCorrectiveActionReqColl,AiActChapter3Article21ReqColl
+AiActChapter3Article22ReqColl,Duty of information,Article22,,,,AiActTitleIIIChapter3ReqColl
+AiActChapter3Article23ReqColl,Cooperation with competent authorities,Article 23,,,,AiActTitleIIIChapter3ReqColl
+AiaPrReqColl_23.1,Cooperation with competent authorities - Article 23.1,Article 23.1,,,AimssDocumentedInformationGeneralReqColl,AiActChapter3Article23ReqColl
+AiActChapter3Article24ReqColl,Obligations of product manufacturers,Article 24,,,,AiActTitleIIIChapter3ReqColl
+AiActTitleIIIChapter4ReqColl,Notifiying authorities and notified bodies,Chapter 4,,,,AiActTitleIIIHigh-RiskAiSystemsReqColl
+AiActChapter4Article33ReqColl,Notified bodies,Article 33,,,,AiActTitleIIIChapter4ReqColl
+AiaPrReqColl_33.4,Notified bodies - Article 33.4,Article 33.4,,,,AiActChapter4Article33ReqColl
+AiaPrReqColl_33.10,Notified bodies - Article 33.10,Article 33.10,,,,AiActChapter4Article33ReqColl
+AiActTitleIIIChapter5ReqColl,"Standards, conformity assessment, certificates, registration",Chapter 5,,,,AiActTitleIIIHigh-RiskAiSystemsReqColl
+AiActChapter5Article40ReqColl,Harmonised standards,Article 40,,,,AiActTitleIIIChapter5ReqColl
+AiActChapter5Article41ReqColl,Common Specifications,Article 41,,,,AiActTitleIIIChapter5ReqColl
+AiActChapter5Article43ReqColl,Conformity assessment,Article 43,,,,AiActTitleIIIChapter5ReqColl
+AiaPrReqColl_43.1,Conformity assessment - Article 43.1,Article 43.1,,,,AiActChapter5Article43ReqColl
+AiaPrReqColl_43.1_R1a,Conformity assessment - Article 43.1_R1a,Article 43.1_R1a,,,,AiaPrReqColl_43.1
+AiaPrReqColl_43.3,Conformity assessment - Article 43.3,Article 43.3,,,,AiActChapter5Article43ReqColl
+AiaPrReqColl_43.4,Conformity assessment - Article 43.4,Article 43.4,,,,AiActChapter5Article43ReqColl
+AiaPrReqColl_43.6,Conformity assessment - Article 43.6,Article 43.6,,,,AiActChapter5Article43ReqColl
+AiActChapter5Article48ReqColl,EU declaration of conformity,Article 48,,,,AiActTitleIIIChapter5ReqColl
+AiaPrReqColl_48.1,EU declaration of conformity - Article 48.1,Article 48.1,,,,AiActChapter5Article48ReqColl
+AiaPrReqColl_48.2,EU declaration of conformity - Article 48.2,Article 48.2,,,,AiActChapter5Article48ReqColl
+AiaPrReqColl_48.3,EU declaration of conformity - Article 48.3,Article 48.3,,,,AiActChapter5Article48ReqColl
+AiaPrReqColl_48.4,EU declaration of conformity - Article 48.4,Article 48.4,,,,AiActChapter5Article48ReqColl
+AiActChapter5Article49ReqColl,CE marking of conformity,Article 49,,,,AiActTitleIIIChapter5ReqColl
+AiActChapter5Article51ReqColl,Registration,Article 51,,,,AiActTitleIIIChapter5ReqColl
+"AiActTitleVIIIPost-MarketMonitoring,InformationSharing,MarketSurveillanceReqColl","Post-Market monitoring, information sharing, market surveillance",Title VIII,,,,
+AiActTitleVIIIChapter1ReqColl,Post-market monitoring,Chapter 1,,,,"AiActTitleVIIIPost-MarketMonitoring,InformationSharing,MarketSurveillanceReqColl"
+AiActChapter1Article61ReqColl,Post-market monitoring by providers and post-market monitoring plan for high-risk AI systems,Article 61,,,,PostMarketMonitoringReqColl
+AiaPrReqColl_61.3,Post-market monitoring by providers and post-market monitoring plan for high-risk AI systems - Article 61.3,Article 61.3,,,,AiActChapter1Article61ReqColl
+AiaPrReqColl_61.4,Post-market monitoring by providers and post-market monitoring plan for high-risk AI systems - Article 61.4,Article 61.4,,,,AiActChapter1Article61ReqColl
+AiActTitleVIIIChapter2ReqColl,Sharing of information on incidents and malfunctioning,Chapter 2,,,,"AiActTitleVIIIPost-MarketMonitoring,InformationSharing,MarketSurveillanceReqColl"
+AiActChapter2Article62ReqColl,Reporting of serious incidents and of malfunctioning,Article 62,,,,AiActTitleVIIIChapter2ReqColl
+AiaPrReqColl_62.1,Reporting of serious incidents and of malfunctioning - Article 62.1,Article 62.1,,,,AiActChapter2Article62ReqColl
+AiActTitleVIIIChapter3ReqColl,Enforcement,Chapter 3,,,,"AiActTitleVIIIPost-MarketMonitoring,InformationSharing,MarketSurveillanceReqColl"
+AiActChapter3Article63ReqColl,Market surveillance and control of AI systems in the Union market,Article 63,,,,AiActTitleVIIIChapter3ReqColl
+AiaPrReqColl_63.1_R1,Market surveillance and control of AI systems in the Union market - Article 63.1_R1,Article 63.1_R1,,,,AiActChapter3Article63ReqColl
+AiaPrReqColl_63.2,Market surveillance and control of AI systems in the Union market - Article 63.2,Article 63.2,,,,AiActChapter3Article63ReqColl
+AiActChapter3Article64ReqColl,Access to data and documentation,Article 64,,,,AiActTitleVIIIChapter3ReqColl
+AiaPrReqColl_64.3,Access to data and documentation - Article 64.3,Article 64.3,,,,AiActChapter3Article64ReqColl
+AiActChapter3Article65ReqColl,Procedure for dealing with AI systems presenting a risk at national level,Article 65,,,,AiActTitleVIIIChapter3ReqColl
