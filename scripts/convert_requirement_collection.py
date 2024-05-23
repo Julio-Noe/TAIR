@@ -7,7 +7,7 @@ public = False
 
 #Files
 
-input_output_file_name = standard_type+"_requirement_specification_collection"
+input_output_file_name = standard_type+"_requirement_collection"
 
 input_file = csv.DictReader(open(input_output_file_name+".csv"))
 
@@ -23,7 +23,7 @@ output_graph.bind("prov", PROV)
 
 #Links
 requirement_collection = tair+'RequirementCollection'
-standard_type == "aiAct":
+standard_type == "aiAct"
 input_requirement_collection = tair+'AiActRequirementCollection'
 requirement_collection_label = "AI Act requirement collection"
 standard_source = 'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206'
